@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/2/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/2/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/2/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/2/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/2/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/2/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -44,7 +44,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             
-            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color:white;">去健身啦.com<img src="Public\Home\images\favicon.ico"></a>
+            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color: #2a6496;background-color: #0aa;">去健身啦.com......</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -139,7 +139,7 @@ $("#Mall_nav").mouseleave(function(){
     <section>
         <div class="row">
             <div class="col-md-4">
-                <form class="form-horizontal" action="/wwwroot/index.php?s=/Home/User/login.html" method="post">
+                <form class="form-horizontal" action="/2/index.php?s=/Home/User/login.html" method="post">
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="inputEmail">用户名</label>
                         <div class="col-md-8">
@@ -205,9 +205,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/wwwroot", //当前网站地址
-		"APP"    : "/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/2", //当前网站地址
+		"APP"    : "/2/index.php?s=", //当前项目地址
+		"PUBLIC" : "/2/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]

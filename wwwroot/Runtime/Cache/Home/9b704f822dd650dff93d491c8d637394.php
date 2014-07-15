@@ -5,6 +5,7 @@
 <title><?php echo C('WEB_SITE_TITLE');?></title>
 <link href="/2/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/2/Public/home/css/base.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="/2/Public/static/bootstrap/js/html5shiv.js"></script>
@@ -16,8 +17,6 @@
 <!--[if gte IE 9]><!-->
 <script type="text/javascript" src="/2/Public/static/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/2/Public/static/bootstrap/js/bootstrap.min.js"></script>
-
-
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>

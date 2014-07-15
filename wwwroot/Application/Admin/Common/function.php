@@ -423,3 +423,19 @@ function get_mainmuscletype($type){
     return $list;
 }
 
+//$deep为是否深度遍历目录 默认遍历
+//支持中文目录 中文文件
+function listDir($dir,$deep=true,$eid){
+    global $arr;
+    if(is_dir($dir)){
+        $fp=opendir($dir);
+        while(false!==$file=readdir($fp)){
+            if($file!='.' && $file!='..'){
+            $file=iconv('GBK','UTF-8',$file);
+            echo "<div height='150' width='150' style=float:left;><input class=ids type=checkbox name=id[] value=/Uploads/ExercisePic/".$eid."/".$file."  /><img  width=150 height=150 src=./Uploads/ExercisePic/".$eid."/".$file." alt=></div>"; 
+            $arr[]=$file;
+            }
+        }
+        closedir($fp);
+    }
+}
