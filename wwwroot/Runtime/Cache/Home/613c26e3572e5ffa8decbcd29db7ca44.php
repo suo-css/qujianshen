@@ -44,7 +44,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             
-            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color:white;">去健身啦.com<img src="Public\Home\images\favicon.ico"></a>
+            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color: #2a6496;background-color: #0aa;">去健身啦.com......</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -405,60 +405,6 @@ $("#Mall_nav").mouseleave(function(){
 
     <script type="text/javascript" >
         $("document").ready(function() {
-            
-              var filter_1 = "";
-                var filter_2 = "";
-                var filter_3 = "";
-                var filter_4 = "";
-                var filter_5 = "";
-                var filter_6 = "";
-                $("input[name='mainmuscleid']:checkbox:checked").each(function() {
-                    filter_1 += $(this).val() + ',';
-                });
-                $("input[name='exercisetypeid']:checkbox:checked").each(function() {
-                    filter_2 += $(this).val() + ',';
-                });
-                $("input[name='equiptypeid']:checkbox:checked").each(function() {
-                    filter_3 += $(this).val() + ',';
-                });
-                $("input[name='forcetypeid']:checkbox:checked").each(function() {
-                    filter_4 += $(this).val() + ',';
-                });
-                $("input[name='sporttypeid']:checkbox:checked").each(function() {
-                    filter_5 += $(this).val() + ',';
-                });
-                $("input[name='leveltypeid']:checkbox:checked").each(function() {
-                    filter_6 += $(this).val() + ',';
-                });
-
-                $.post("<?php echo U('Exercise/search');?>", {'filter_1': filter_1, 'filter_2': filter_2,
-                    'filter_3': filter_3, 'filter_4': filter_4, 'filter_5': filter_5, 'filter_6': filter_6},
-                function(data) {
-                    if (data.status)
-                    {
-                        //alert(data.info[0].ename);
-
-                        $("#excInfo").empty();
-                        for (var i = 0; i < data.info.length; i++)
-                        {
-
-                            var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
-                            exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                            exc += '<div class="col-md-7"><h5>' + "<a href='<?php echo U("Exercise / exc_all");?>'>" + data.info[i].ename + "</a></h5>";
-                            exc += '<h6>目标肌群</h6><h6>' + data.info[i].mtname + '</h6>';
-                            exc += '<h6>器械</h6><h6>' + data.info[i].eqtname + '</h6></div>';
-                            exc += '</div>';
-
-                            $("#excInfo").append(exc);
-                        }
-
-                    }
-                    else
-                    {
-                        //$("#excInfo").append("获取失败");
-                    }
-                }, 'json');
-            
             $(".ids").click(function() {
                 var filter_1 = "";
                 var filter_2 = "";
@@ -491,21 +437,19 @@ $("#Mall_nav").mouseleave(function(){
                     if (data.status)
                     {
                         //alert(data.info[0].ename);
-
+                        
                         $("#excInfo").empty();
                         for (var i = 0; i < data.info.length; i++)
                         {
-
+                            
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                            exc += '<div class="col-md-7"><h5>' + "<a href='<?php echo U("Exercise / exc_all");?>'>" + data.info[i].ename + "</a></h5>";
-                            exc += '<h6>目标肌群</h6><h6>' + data.info[i].mtname + '</h6>';
-                            exc += '<h6>器械</h6><h6>' + data.info[i].eqtname + '</h6></div>';
-                            exc += '</div>';
-
-                            $("#excInfo").append(exc);
+                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
+                          exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
+                           exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
+                            exc +='</div>';
                         }
-
+                        
                     }
                     else
                     {
@@ -515,8 +459,22 @@ $("#Mall_nav").mouseleave(function(){
             });
 
         })
+
+    function action(obj){
+        var id  = obj.id;
+        var url = "<?php echo U('Exercise/addaction');?>";
+        $.post(url,{id:id},function(data){
+            if(data){
+               $("#"+obj.id).hide(); 
+            }
+        })
+    }
     </script>
 
+
+         
+
+        
 
     </div>
 </div>

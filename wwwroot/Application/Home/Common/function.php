@@ -111,12 +111,43 @@ function reply_comment($cid){
 
 
 
+/**
+ * 数组打印
+ * @param  $arr 数组
+ */
+function p($arr){
+    echo "<pre>";
+            print_r($arr);
+    echo "</pre>";
+}
 
-
-
-
-
-
+/**
+ * 根据模块ID返回对应的信息
+ * @param  $id   模块ID
+ * @return $data HTML 信息
+ */
+function goaltype($id){
+   $list   = M('goaltype')->where(array('status'=>1,'moduleid'=>$id))->select();
+   foreach ($list as $v) {
+       $result = M('goal')->where(array('status'=>1,'uid'=>is_login(),'detailtypeid'=>$v['id']))->find();
+       if(!$result){
+          $name  = json_encode($v['typename']);
+          $data .="<div><div id=type-$v[id]></div><span>".$v['typename']."  </span><a href=javascript:; onclick='add_goal($v[id],$name)';>新增目标</a></div><br>";
+       }else{
+          $json  = json_encode(array('startvalue'=>$result['startvalue'],'startdate'=>$result['startdate'],'goalvalue'=>$result['goalvalue'],'goaldate'=>$result['goaldate'],'name'=>$v['typename'],'id'=>$v['id'],'currentvalue'=>$result['currentvalue']));
+          $data .="<div><div id=type-$v[id]>".$result['startvalue']."-".$result['startdate']."-".$result['goalvalue']."-".$result['goaldate']."</div><span>".$v['typename']."  </span><a href=javascript:; onclick=update_goal($json)>修改目标</a>  <a href=".U('Exercise/delete_goal',array('id'=>$result['id'])) .">删除目标</a></div><br>";
+       }
+       
+   }
+   return $data;
+}
 
   
 
+function show_goal($id){
+    $tinue = M('goalcontinue')->where(array('status'=>1,'uid'=>is_login(),'continuetypeid'=>$id))->field('value')->order('create_time desc')->limit('0,1')->select();
+    foreach ($tinue as $key => $value) {
+      return $value['value'];
+    }
+  
+}

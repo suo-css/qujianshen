@@ -16,11 +16,53 @@ namespace Home\Controller;
 class ExerciseController extends HomeController {
 
 	/* 用户中心首页 */
-        public function exc_common(){
+    public function exc_common(){
+
+            $this->list     = $list      = M('goalmodule')->where(array('status'=>1))->select();
+
+            $this->goaltype = $goaltype  = M('goalcontinuetype')->where(array('status'=>1))->select(); 
+
+            if($_POST){
+                foreach ($_POST['type'] as $k => $v) {
+                    $table = D('goalcontinue');
+                    $table->uid   = is_login();
+                    $table->value = $v;
+                    $table->continuetypeid = $k;
+                    $table->create_time = date('Y-m-d H:i:s',time()); 
+                    $table->status = 1;
+                    $table->add(); 
+                }
+            }
             $this->display();
 	}
 	
-        public function exc_filter(){
+    public function goal(){
+        if(IS_AJAX){     
+            switch (I('sta')) {
+                case '0':
+                    $date = array('uid'=>is_login(),'startvalue'=>I('startvalue'),'startdate'=>date('Y-m-d'),'goalvalue'=>I('goalvalue'),'goaldate'=>I('goaldate'),'detailtypeid'=>I('id'),'status'=>1,'create_time'=>date('Y-m-d H:i:s',time()));
+                    M('goal')->where(array('uid'=>is_login(),'detailtypeid'=>I('id')))->delete();
+                    M('goal')->add($date);
+                    echo 1;
+                    break;
+                case '1':
+                    $date = array('uid'=>is_login(),'currentvalue'=>I('currentvalue'),'currenttime'=>date('Y-m-d'),'startvalue'=>I('startvalue'),'startdate'=>date('Y-m-d'),'goalvalue'=>I('goalvalue'),'goaldate'=>I('goaldate'),'detailtypeid'=>I('id'),'status'=>1,'create_time'=>date('Y-m-d H:i:s',time()));
+                    M('goal')->where(array('uid'=>is_login(),'detailtypeid'=>I('id')))->delete();
+                    M('goal')->add($date);
+                    echo 1;
+                    break;
+            }
+         
+        }
+    }
+
+    public function delete_goal(){
+        if(M('goal')->where(array('id'=>$_GET['id']))->delete()){
+            $this->redirect('exc_common');
+        }
+    }
+
+    public function exc_filter(){
             $list = M("Mainmuscletype");
             $list = $list->getField('id, name');
             $this->assign("_list", $list);
@@ -47,7 +89,7 @@ class ExerciseController extends HomeController {
             $this->display();
 	}
         
-        public function search()
+    public function search()
         {
             $filter1 = I('filter_1');
             $filter1 = substr($filter1,0,strlen($filter1)-1);
@@ -163,5 +205,31 @@ class ExerciseController extends HomeController {
         }
     }
 
+    /**
+     * 添加喜欢的动作
+     */
+    public function addaction(){
+        $result = M('likeaction')->where(array('uid'=>is_login()))->find();
+        if($result){
+            $json   = json_decode($result['actionid']);
+            $json[] = I('id');
+            $data = array('actionid'=>json_encode($json));
+            M('likeaction')->where(array('uid'=>is_login()))->save($data);
+            echo 1;
+        }else{
+            $array = json_encode(array(I('id'))); 
+            $data  = array('uid'=>is_login(),'actionid'=>$array);
+            M('likeaction')->add($data);
+            echo 1;
+        }
+    }
+
+    public function exc_tml(){
+        $this->display();
+    }
+     public function exc_mte(){
+        
+        $this->display();
+    }
 }
 

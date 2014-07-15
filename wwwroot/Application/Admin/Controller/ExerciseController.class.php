@@ -5,6 +5,7 @@ use Admin\Model\AuthGroupModel;
 use Think\Page;
 
 class ExerciseController extends AdminController {
+
     public function index()
     {
         /*$nickname       =   I('nickname');
@@ -36,11 +37,12 @@ class ExerciseController extends AdminController {
     }
     
 
-    public function add($ename = '', $mainmuscletype = 1, $exercisetype = 1, $equiptype = 1,
+    public function add($eid='',$ename = '', $mainmuscletype = 1, $exercisetype = 1, $equiptype = 1,
                 $forcetype = 1, $sport = 1, $level = 1, $sex = '',$imgurl = '')
 
     {  
         if(IS_POST){
+
             //echo $ename;
                 $description = '';
                 $filename = '';
@@ -57,15 +59,10 @@ class ExerciseController extends AdminController {
                     'filename' => $filename, 
                     'videoname' => $videoname);*/
                     $exercise = D('Exercise');
-                    $info = $exercise->addExercise($ename, $mainmuscletype, $exercisetype, $equiptype,
+                    $info = $exercise->addExercise($eid,$ename, $mainmuscletype, $exercisetype, $equiptype,
                 $forcetype, $sport, $level, $sex, $description, $filename, $videoname,$imgurl);
                     
                 if($info){
-                    if($imgurl!=""){
-                        rename($_SERVER['DOCUMENT_ROOT'].$imgurl,"./Uploads/ExercisePic/".$ename.".jpg");
-                        $data = array('imgurl'=>"./Uploads/ExercisePic/".$ename.".jpg");
-                        M('Exercise')->where(array('eid'=>$info))->save($data);
-                    }
                     $this->success('动作添加成功！',U('myexercise'));
                 } else {
                     $this->error('动作添加失败！');
@@ -106,31 +103,149 @@ class ExerciseController extends AdminController {
      * @author huajie <banhuajie@163.com>
      */
     public function uploadPicture(){
-        //TODO: 用户登录检测
-        /* 返回标准数据 */
-        $return  = array('status' => 1, 'info' => '上传成功', 'data' => '');
-        $this->ajaxReturn($return);die;
-        /* 调用文件上传组件上传文件 */
-        $Picture = D('Picture');
-        $pic_driver = C('PICTURE_UPLOAD_DRIVER');
-        $info = $Picture->upload_img(
-            $_FILES,
-            C('PICTURE_UPLOAD_IMG'),
-            C('PICTURE_UPLOAD_DRIVER'),
-            C("UPLOAD_{$pic_driver}_CONFIG")
-        ); //TODO:上传到远程服务器
+        header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+        header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+        header("Cache-Control: no-store, no-cache, must-revalidate");
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache");
 
-        /* 记录图片信息 */
-        if($info){
-            $return['status'] = 1;
-            $return = array_merge($info['download'], $return);
-        } else {
-            $return['status'] = 0;
-            $return['info']   = $Picture->getError();
+        if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+            exit; // finish preflight CORS requests here
         }
-        $return['info'] = $info['download'];
-        /* 返回JSON数据 */
-        $this->ajaxReturn($return);
+
+        if ( !empty($_REQUEST[ 'debug' ]) ) {
+            $random = rand(0, intval($_REQUEST[ 'debug' ]) );
+            if ( $random === 0 ) {
+                header("HTTP/1.0 500 Internal Server Error");
+                exit;
+            }
+        }
+
+        // 5 minutes execution time
+        @set_time_limit(5 * 60);
+
+        $url = C('PICTURE_UPLOAD_IMG');
+
+        $targetDir = 'upload_tmp';
+        $action_name = mb_convert_encoding($_REQUEST['action_name'],"GBK","UTF-8");
+        $uploadDir = $url['rootPath'].$action_name;
+        $cleanupTargetDir = true; // Remove old files
+        $maxFileAge = 5 * 3600; // Temp file age in seconds
+
+
+        // Create target dir
+        if (!file_exists($targetDir)) {
+            @mkdir($targetDir);
+        }
+
+        // Create target dir
+        if (!file_exists($uploadDir)) {
+            @mkdir($uploadDir);
+        }
+
+        // Get a file name
+        if (isset($_REQUEST["name"])) {
+            $fileName = $_REQUEST["name"];
+        } elseif (!empty($_FILES)) {
+            $fileName = $_FILES["file"]["name"];
+        } else {
+            $fileName = uniqid("file_");
+        }
+
+        $filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
+        $uploadPath = $uploadDir . DIRECTORY_SEPARATOR . $fileName;
+
+        // Chunking might be enabled
+        $chunk = isset($_REQUEST["chunk"]) ? intval($_REQUEST["chunk"]) : 0;
+        $chunks = isset($_REQUEST["chunks"]) ? intval($_REQUEST["chunks"]) : 1;
+
+
+        // Remove old temp files
+        if ($cleanupTargetDir) {
+            if (!is_dir($targetDir) || !$dir = opendir($targetDir)) {
+                die('{"jsonrpc" : "2.0", "error" : {"code": 100, "message": "Failed to open temp directory."}, "id" : "id"}');
+            }
+
+            while (($file = readdir($dir)) !== false) {
+                $tmpfilePath = $targetDir . DIRECTORY_SEPARATOR . $file;
+
+                // If temp file is current file proceed to the next
+                if ($tmpfilePath == "{$filePath}_{$chunk}.part" || $tmpfilePath == "{$filePath}_{$chunk}.parttmp") {
+                    continue;
+                }
+
+                // Remove temp file if it is older than the max age and is not the current file
+                if (preg_match('/\.(part|parttmp)$/', $file) && (@filemtime($tmpfilePath) < time() - $maxFileAge)) {
+                    @unlink($tmpfilePath);
+                }
+            }
+            closedir($dir);
+        }
+
+
+        // Open temp file
+        if (!$out = @fopen("{$filePath}_{$chunk}.parttmp", "wb")) {
+            die('{"jsonrpc" : "2.0", "error" : {"code": 102, "message": "Failed to open output stream."}, "id" : "id"}');
+        }
+
+        if (!empty($_FILES)) {
+            if ($_FILES["file"]["error"] || !is_uploaded_file($_FILES["file"]["tmp_name"])) {
+                die('{"jsonrpc" : "2.0", "error" : {"code": 103, "message": "Failed to move uploaded file."}, "id" : "id"}');
+            }
+
+            // Read binary input stream and append it to temp file
+            if (!$in = @fopen($_FILES["file"]["tmp_name"], "rb")) {
+                die('{"jsonrpc" : "2.0", "error" : {"code": 101, "message": "Failed to open input stream."}, "id" : "id"}');
+            }
+        } else {
+            if (!$in = @fopen("php://input", "rb")) {
+                die('{"jsonrpc" : "2.0", "error" : {"code": 101, "message": "Failed to open input stream."}, "id" : "id"}');
+            }
+        }
+
+        while ($buff = fread($in, 4096)) {
+            fwrite($out, $buff);
+        }
+
+        @fclose($out);
+        @fclose($in);
+
+        rename("{$filePath}_{$chunk}.parttmp", "{$filePath}_{$chunk}.part");
+
+        $index = 0;
+        $done = true;
+        for( $index = 0; $index < $chunks; $index++ ) {
+            if ( !file_exists("{$filePath}_{$index}.part") ) {
+                $done = false;
+                break;
+            }
+        }
+        if ( $done ) {
+            if (!$out = @fopen($uploadPath, "wb")) {
+                die('{"jsonrpc" : "2.0", "error" : {"code": 102, "message": "Failed to open output stream."}, "id" : "id"}');
+            }
+
+            if ( flock($out, LOCK_EX) ) {
+                for( $index = 0; $index < $chunks; $index++ ) {
+                    if (!$in = @fopen("{$filePath}_{$index}.part", "rb")) {
+                        break;
+                    }
+
+                    while ($buff = fread($in, 4096)) {
+                        fwrite($out, $buff);
+                    }
+
+                    @fclose($in);
+                    @unlink("{$filePath}_{$index}.part");
+                }
+
+                flock($out, LOCK_UN);
+            }
+            @fclose($out);
+        }
+
+        // Return Success JSON-RPC response
+        die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
 
     public function edit($id = 0){
@@ -160,6 +275,15 @@ class ExerciseController extends AdminController {
             $this->assign('info', $info);   
             $this->display();
         }
+    }
+    public function delete_img(){
+        foreach (I('id') as $k => $v) {
+           unlink($_SERVER['DOCUMENT_ROOT'].$v);
+        }
+        $this->success('');
+/*        foreach ($_POST['mycars'] as $k => $v) {
+         unlink($_SERVER['DOCUMENT_ROOT'].$v);
+        }*/ 
     }
 }
 
