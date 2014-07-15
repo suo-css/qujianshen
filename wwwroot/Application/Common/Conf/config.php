@@ -17,7 +17,7 @@ return array(
     'DEFAULT_MODULE'     => 'Home',
     'MODULE_DENY_LIST'   => array('Common', 'User'),
     //'MODULE_ALLOW_LIST'  => array('Home','Admin'),
-
+ 
     /* 系统数据加密设置 */
     'DATA_AUTH_KEY' => '3rMWDOdx7oBV}v5@X([6!Kag4qE",+N:Y#=UkQPp', //默认数据加密KEY
 
