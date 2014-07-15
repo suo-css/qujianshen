@@ -205,5 +205,31 @@ class ExerciseController extends HomeController {
         }
     }
 
+    /**
+     * 添加喜欢的动作
+     */
+    public function addaction(){
+        $result = M('likeaction')->where(array('uid'=>is_login()))->find();
+        if($result){
+            $json   = json_decode($result['actionid']);
+            $json[] = I('id');
+            $data = array('actionid'=>json_encode($json));
+            M('likeaction')->where(array('uid'=>is_login()))->save($data);
+            echo 1;
+        }else{
+            $array = json_encode(array(I('id'))); 
+            $data  = array('uid'=>is_login(),'actionid'=>$array);
+            M('likeaction')->add($data);
+            echo 1;
+        }
+    }
+
+    public function exc_tml(){
+        $this->display();
+    }
+     public function exc_mte(){
+        
+        $this->display();
+    }
 }
 

@@ -231,7 +231,7 @@
                             
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                          exc +='<div class="col-md-7"><h5>'+"<a href={:U("Exercise/exc_all",'','')}/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a></h5>";
+                          exc +='<div class="col-md-7"><h5>'+"<a href={:U("Exercise/exc_all",'','')}/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
                           exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
                            exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
                             exc +='</div>';
@@ -258,6 +258,16 @@
             });
 
         })
+
+    function action(obj){
+        var id  = obj.id;
+        var url = "{:U('Exercise/addaction')}";
+        $.post(url,{id:id},function(data){
+            if(data){
+               $("#"+obj.id).hide(); 
+            }
+        })
+    }
     </script>
 
 </block>

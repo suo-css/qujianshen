@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/2/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/2/Public/home/css/base.css" rel="stylesheet">
+<link href="/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/2/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/2/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/2/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/2/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -234,6 +234,10 @@ $("#Mall_nav").mouseleave(function(){
 </nav>
     </div>
     
+         
+
+        
+
     </div>
 </div>
 
@@ -261,9 +265,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/2", //当前网站地址
-		"APP"    : "/2/index.php?s=", //当前项目地址
-		"PUBLIC" : "/2/Public", //项目公共目录地址
+		"ROOT"   : "/wwwroot", //当前网站地址
+		"APP"    : "/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
