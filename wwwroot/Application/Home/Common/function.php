@@ -142,8 +142,9 @@ function goaltype($id){
    return $data;
 }
 
-  
-
+/**
+ * 根据对应ID返回数据
+ */
 function show_goal($id){
     $tinue = M('goalcontinue')->where(array('status'=>1,'uid'=>is_login(),'continuetypeid'=>$id))->field('value')->order('create_time desc')->limit('0,1')->select();
     foreach ($tinue as $key => $value) {
@@ -151,3 +152,19 @@ function show_goal($id){
     }
   
 }
+
+/**
+ * 判断用户是否已经添加了对应的
+ * @param  $id 动作ID
+ * @return html 
+ */
+function actiontype($id){ 
+  if($result = M('likeaction')->where(array('uid'=>is_login()))->find()){
+    if(!in_array($id,json_decode($result['actionid']))){
+        return "<a href=javascript:; onclick=action(this); id=".$id.">添加为喜欢动作</a>";
+    }else{
+        return '';
+    }
+  }
+}
+

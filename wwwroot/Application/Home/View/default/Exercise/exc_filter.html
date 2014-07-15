@@ -28,13 +28,13 @@
                     <volist name="_list" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" /></td>
+                                <td><input class="ids" type="checkbox" checked name="mainmuscleid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" /></td>
+                            <td><input class="ids" type="checkbox" checked name="mainmuscleid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -56,13 +56,13 @@
                     <volist name="_list2" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" /></td>
+                                <td><input class="ids" type="checkbox" checked name="exercisetypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" /></td>
+                            <td><input class="ids" type="checkbox" checked name="exercisetypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -85,13 +85,13 @@
                     <volist name="_list3" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" /></td>
+                                <td><input class="ids" type="checkbox" checked name="equiptypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" /></td>
+                            <td><input class="ids" type="checkbox" checked name="equiptypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -113,13 +113,13 @@
                     <volist name="_list4" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" /></td>
+                                <td><input class="ids" checked type="checkbox" name="forcetypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" /></td>
+                            <td><input class="ids" checked type="checkbox" name="forcetypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -142,13 +142,13 @@
                     <volist name="_list5" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" /></td>
+                                <td><input class="ids" checked type="checkbox" name="sporttypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" /></td>
+                            <td><input class="ids" checked type="checkbox" name="sporttypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -170,13 +170,13 @@
                     <volist name="_list6" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" /></td>
+                                <td><input class="ids" checked type="checkbox" name="leveltypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" /></td>
+                            <td><input class="ids" checked type="checkbox" name="leveltypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -231,11 +231,11 @@
                             
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                          exc +='<div class="col-md-7"><h5>'+"<a href={:U("Exercise/exc_all",'','')}/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
+                          exc +='<div class="col-md-7"><h5>'+"<a href={:U("Exercise/exc_all",'','')}/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a>"+data.info[i].action+"</h5>";
                           exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
                            exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
                             exc +='</div>';
-          
+         // <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a>
                             $("#excInfo").append(exc);
 //                            $("#excInfo").append("<tr>");
 //                            $("#excInfo").append("<td><a href='{:U("Exercise/exc_all")}'>" + data.info[i].ename + "</a></td>");
@@ -263,8 +263,10 @@
         var id  = obj.id;
         var url = "{:U('Exercise/addaction')}";
         $.post(url,{id:id},function(data){
-            if(data){
+            if(data==1){
                $("#"+obj.id).hide(); 
+            }else{
+                alert('已经添加过了！');
             }
         })
     }
