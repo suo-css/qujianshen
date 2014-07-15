@@ -227,8 +227,15 @@ class ExerciseController extends HomeController {
     public function exc_tml(){
         $this->display();
     }
-     public function exc_mte(){
-        
+    
+    public function exc_mte(){
+        $list = M('likeaction')->where(array('uid'=>2))->find();
+        $arr  = json_decode($list['actionid']);
+        $res  = array();
+        foreach ($arr as $k => $value) {
+            $res[] = M('exercise')->where(array('eid'=>$value))->field('eid,ename')->find();
+        }
+        $this->res = $res;
         $this->display();
     }
 }
