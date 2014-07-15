@@ -232,7 +232,7 @@ $("#Mall_nav").mouseleave(function(){
                         "height"          : 30,
                         "swf"             : "/2/Public/static/uploadify/uploadify.swf",
                         "fileObjName"     : "download",
-                        "buttonText"      : "上传图片",
+                        "buttonText"      : "上传头像",
                         "uploader"        : "<?php echo U('User/uploadPicture',array('session_id'=>session_id()));?>",
                         "width"           : 120,
                         'removeTimeout'   : 1,

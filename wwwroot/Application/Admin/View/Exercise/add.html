@@ -1,15 +1,22 @@
 <extend name="Public/base"/>
 
 <block name="body">
-    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
     <div class="main-title">
         <h2>新增动作</h2>
     </div>
     <form action="{:U()}" method="post" class="form-horizontal">
+
+        <div class="form-item">
+            <label class="item-label">ID<span class="check-tips">（ID不能为空）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="eid" id="eid" value="">
+            </div>
+        </div>   
+
         <div class="form-item">
             <label class="item-label">动作名称<span class="check-tips">（动作名称不能为空）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="ename" id="" value="">
+                <input type="text" class="text input-large" name="ename" id="ename" value="">
             </div>
         </div>
         <div class="form-item">
@@ -70,50 +77,36 @@
                             </volist>
                     </select>
         </div>
-             
-        <div>
-            <input type="file" id="upload_picture_cover_id">
-            <input type="hidden"  name="cover_id"  id="cover_id_cover_id"/>
-            <input type="hidden" name="imgurl" value="" id="imgurl">
-            <div class="upload-img-box">
+       
+    
+    
+       <link rel="stylesheet" type="text/css" href="__ROOT__/webuploader/demo/webuploader.css" />
+       <link rel="stylesheet" type="text/css" href="__ROOT__/webuploader/demo/style.css" />
+        <div id="wrapper">
+            <div id="container">
+                <!--头部，相册选择和格式选择-->
+                <div id="uploader">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <div id="filePicker"></div>
+                            <p>或将照片拖到这里，单次最多可选300张</p>
+                        </div>
+                    </div>
+                    <div class="statusBar" style="display:none;">
+                        <div class="progress">
+                            <span class="text">0%</span>
+                            <span class="percentage"></span>
+                        </div><div class="info"></div>
+                        <div class="btns">
+                            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script type="text/javascript">
-        //上传图片
-        /* 初始化上传插件 */
-        $("#upload_picture_cover_id").uploadify({
-            "height"          : 30,
-            "swf"             : "__STATIC__/uploadify/uploadify.swf",
-            "fileObjName"     : "download",
-            "buttonText"      : "上传图片",
-            "uploader"        : "{:U('exercise/uploadPicture',array('session_id'=>session_id()))}",
-            "width"           : 120,
-            'removeTimeout'   : 1,
-            'fileTypeExts'    : '*.jpg; *.png; *.gif;',
-            "onUploadSuccess" : uploadPicturecover_id,
-            'onFallback' : function() {
-                alert('未检测到兼容版本的Flash.');
-            }
-        });
-        function uploadPicturecover_id(file, data){
-            var data = $.parseJSON(data);
-            var src = '';
-            if(data.status){
-                $("#cover_id_cover_id").val(data.id);
-                src = data.url || '__ROOT__' + data.path
-                $("#cover_id_cover_id").parent().find('.upload-img-box').html(
-                    '<div class="upload-pre-item"><img src="' + src + '"/></div>'
-                );
-                $("#imgurl").val(src);
-            } else {
-                updateAlert(data.info);
-                setTimeout(function(){
-                    $('#top-alert').find('button').click();
-                    $(that).removeClass('disabled').prop('disabled',false);
-                },1500);
-            }
-        }
-        </script>
+        <script type="text/javascript" src="__ROOT__/webuploader/demo/webuploader.js"></script>
+        <script type="text/javascript" src="__ROOT__/webuploader/demo/upload.js"></script>     
+
         <div class="form-item">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
             <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
@@ -123,6 +116,22 @@
 
 <block name="script">
     <script type="text/javascript">
+        var url_img = "{:U('Exercise/uploadPicture')}";
+        $("#eid").keyup(function(){
+            if($(this).val().replace(/(\s+$)|(^\s+)/g, '')!=""){
+                $("#container").show();
+                var name = $("#eid").val();
+                uploader.option( 'formData', {
+                    action_name: name,
+                });
+            }else{
+                $("#container").hide();
+            }
+        })
+        $(document).ready(function(){
+            $("#container").hide();
+        })
+        
         //导航高亮
         highlight_subnav('{:U('User/index')}');
     </script>

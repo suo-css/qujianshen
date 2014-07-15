@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title><?php echo ($meta_title); ?>|OneThink管理平台</title>
-    <link href="/2/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="/2/Public/Admin/css/base.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/2/Public/Admin/css/common.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/2/Public/Admin/css/module.css">
-    <link rel="stylesheet" type="text/css" href="/2/Public/Admin/css/style.css" media="all">
-	<link rel="stylesheet" type="text/css" href="/2/Public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
+    <link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/module.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
      <!--[if lt IE 9]>
-    <script type="text/javascript" src="/2/Public/static/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/Public/static/jquery-1.10.2.min.js"></script>
     <![endif]--><!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="/2/Public/static/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="/2/Public/Admin/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/Public/static/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/Public/Admin/js/jquery.mousewheel.js"></script>
     <!--<![endif]-->
     
 </head>
@@ -85,15 +85,22 @@
             
 
             
-    <script type="text/javascript" src="/2/Public/static/uploadify/jquery.uploadify.min.js"></script>
     <div class="main-title">
         <h2>新增动作</h2>
     </div>
     <form action="<?php echo U();?>" method="post" class="form-horizontal">
+
+        <div class="form-item">
+            <label class="item-label">ID<span class="check-tips">（ID不能为空）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="eid" id="eid" value="">
+            </div>
+        </div>   
+
         <div class="form-item">
             <label class="item-label">动作名称<span class="check-tips">（动作名称不能为空）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="ename" id="" value="">
+                <input type="text" class="text input-large" name="ename" id="ename" value="">
             </div>
         </div>
         <div class="form-item">
@@ -140,50 +147,36 @@
                             <?php $_result=get_mainmuscletype(6);if(is_array($_result)): $i = 0; $__LIST__ = $_result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($key); ?>"><?php echo ($vo); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                     </select>
         </div>
-             
-        <div>
-            <input type="file" id="upload_picture_cover_id">
-            <input type="hidden"  name="cover_id"  id="cover_id_cover_id"/>
-            <input type="hidden" name="imgurl" value="" id="imgurl">
-            <div class="upload-img-box">
+       
+    
+    
+       <link rel="stylesheet" type="text/css" href="/webuploader/demo/webuploader.css" />
+       <link rel="stylesheet" type="text/css" href="/webuploader/demo/style.css" />
+        <div id="wrapper">
+            <div id="container">
+                <!--头部，相册选择和格式选择-->
+                <div id="uploader">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <div id="filePicker"></div>
+                            <p>或将照片拖到这里，单次最多可选300张</p>
+                        </div>
+                    </div>
+                    <div class="statusBar" style="display:none;">
+                        <div class="progress">
+                            <span class="text">0%</span>
+                            <span class="percentage"></span>
+                        </div><div class="info"></div>
+                        <div class="btns">
+                            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script type="text/javascript">
-        //上传图片
-        /* 初始化上传插件 */
-        $("#upload_picture_cover_id").uploadify({
-            "height"          : 30,
-            "swf"             : "/2/Public/static/uploadify/uploadify.swf",
-            "fileObjName"     : "download",
-            "buttonText"      : "上传图片",
-            "uploader"        : "<?php echo U('exercise/uploadPicture',array('session_id'=>session_id()));?>",
-            "width"           : 120,
-            'removeTimeout'   : 1,
-            'fileTypeExts'    : '*.jpg; *.png; *.gif;',
-            "onUploadSuccess" : uploadPicturecover_id,
-            'onFallback' : function() {
-                alert('未检测到兼容版本的Flash.');
-            }
-        });
-        function uploadPicturecover_id(file, data){
-            var data = $.parseJSON(data);
-            var src = '';
-            if(data.status){
-                $("#cover_id_cover_id").val(data.id);
-                src = data.url || '/2' + data.path
-                $("#cover_id_cover_id").parent().find('.upload-img-box').html(
-                    '<div class="upload-pre-item"><img src="' + src + '"/></div>'
-                );
-                $("#imgurl").val(src);
-            } else {
-                updateAlert(data.info);
-                setTimeout(function(){
-                    $('#top-alert').find('button').click();
-                    $(that).removeClass('disabled').prop('disabled',false);
-                },1500);
-            }
-        }
-        </script>
+        <script type="text/javascript" src="/webuploader/demo/webuploader.js"></script>
+        <script type="text/javascript" src="/webuploader/demo/upload.js"></script>     
+
         <div class="form-item">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
             <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
@@ -202,17 +195,17 @@
     <script type="text/javascript">
     (function(){
         var ThinkPHP = window.Think = {
-            "ROOT"   : "/2", //当前网站地址
-            "APP"    : "/2/index.php?s=", //当前项目地址
-            "PUBLIC" : "/2/Public", //项目公共目录地址
+            "ROOT"   : "", //当前网站地址
+            "APP"    : "/index.php?s=", //当前项目地址
+            "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
             "VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
         }
     })();
     </script>
-    <script type="text/javascript" src="/2/Public/static/think.js"></script>
-    <script type="text/javascript" src="/2/Public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="/Public/static/think.js"></script>
+    <script type="text/javascript" src="/Public/Admin/js/common.js"></script>
     <script type="text/javascript">
         +function(){
             var $window = $(window), $subnav = $("#subnav"), url;
@@ -284,6 +277,22 @@
     </script>
     
     <script type="text/javascript">
+        var url_img = "<?php echo U('Exercise/uploadPicture');?>";
+        $("#eid").keyup(function(){
+            if($(this).val().replace(/(\s+$)|(^\s+)/g, '')!=""){
+                $("#container").show();
+                var name = $("#eid").val();
+                uploader.option( 'formData', {
+                    action_name: name,
+                });
+            }else{
+                $("#container").hide();
+            }
+        })
+        $(document).ready(function(){
+            $("#container").hide();
+        })
+        
         //导航高亮
         highlight_subnav('<?php echo U('User/index');?>');
     </script>

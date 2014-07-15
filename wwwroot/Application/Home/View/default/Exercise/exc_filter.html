@@ -1,44 +1,25 @@
 
 <extend name="Base/common"/>
 <block name="body">
-    <style type="text/css">
-        .filterSep {
-            height:1px;
-            width:100%;
-            background:#CCCCCC;
-            overflow:hidden;
-            padding-bottom:1px; 
-            padding-top:1px; 
-            margin-bottom: 6px;
-            margin-top: 3px;
-        }
-        .sub_title_filter{
-            padding-bottom: 6px;
-            color:black;
-            font-weight:bold;
-            font-size: 75%;
-        }
-        .filterTable{
-            padding-bottom:5px; 
-        }
-    </style>
     <include file="Public/excNav"/>
     <div class="col-md-8">
         <!-- Contents
         ================================================== -->
         <h3> 过滤后的动作 </h3>
         <div id = "excInfo">
+           
         </div>
     </div>
-    <div id="finderRight" class="col-md-2" style="background-color: #E6E6FA">
-        <h5>
-            动作过滤器
-        </h5>
+    <div id="finderLeft" class="col-md-2">
+
+        <h4>
+            --动作过滤器--
+        </h4>
         <div class="filterSep"></div>
         <div id="Filters">
             <div id="muscleFilter">
                 <h4>
-                    <div class="sub_title_filter">肌群:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">肌群:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -47,13 +28,13 @@
                     <volist name="_list" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="mainmuscleid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -63,9 +44,9 @@
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">锻炼类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">锻炼类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -75,13 +56,13 @@
                     <volist name="_list2" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="exercisetypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -92,9 +73,9 @@
                     </tbody>
                 </table>
 
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">设备类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">设备类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -104,13 +85,13 @@
                     <volist name="_list3" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="equiptypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -120,9 +101,9 @@
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">力量类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">力量类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -132,13 +113,13 @@
                     <volist name="_list4" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="forcetypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -149,9 +130,9 @@
                     </tbody>
                 </table>
 
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">运行类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">运行类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -161,13 +142,13 @@
                     <volist name="_list5" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="sporttypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -177,9 +158,9 @@
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">专家类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">专家类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -189,13 +170,13 @@
                     <volist name="_list6" id="vo" key="k">
                         <if condition="$k % 2 == '1' ">
                             <tr>
-                                <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" checked/></td>
+                                <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" /></td>
                                 <td>
                                     {$vo}
                                 </td>
                         </if>
                         <if condition="$k % 2 == '0' ">   
-                            <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" checked/></td>
+                            <td><input class="ids" type="checkbox" name="leveltypeid" value="{$k}" /></td>
                             <td>
                                 {$vo}
                             </td>
@@ -208,63 +189,9 @@
             </div>
         </div>
     </div>
-
+    
     <script type="text/javascript" >
         $("document").ready(function() {
-            
-              var filter_1 = "";
-                var filter_2 = "";
-                var filter_3 = "";
-                var filter_4 = "";
-                var filter_5 = "";
-                var filter_6 = "";
-                $("input[name='mainmuscleid']:checkbox:checked").each(function() {
-                    filter_1 += $(this).val() + ',';
-                });
-                $("input[name='exercisetypeid']:checkbox:checked").each(function() {
-                    filter_2 += $(this).val() + ',';
-                });
-                $("input[name='equiptypeid']:checkbox:checked").each(function() {
-                    filter_3 += $(this).val() + ',';
-                });
-                $("input[name='forcetypeid']:checkbox:checked").each(function() {
-                    filter_4 += $(this).val() + ',';
-                });
-                $("input[name='sporttypeid']:checkbox:checked").each(function() {
-                    filter_5 += $(this).val() + ',';
-                });
-                $("input[name='leveltypeid']:checkbox:checked").each(function() {
-                    filter_6 += $(this).val() + ',';
-                });
-
-                $.post("{:U('Exercise/search')}", {'filter_1': filter_1, 'filter_2': filter_2,
-                    'filter_3': filter_3, 'filter_4': filter_4, 'filter_5': filter_5, 'filter_6': filter_6},
-                function(data) {
-                    if (data.status)
-                    {
-                        //alert(data.info[0].ename);
-
-                        $("#excInfo").empty();
-                        for (var i = 0; i < data.info.length; i++)
-                        {
-
-                            var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
-                            exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                            exc += '<div class="col-md-7"><h5>' + "<a href='{:U("Exercise / exc_all")}'>" + data.info[i].ename + "</a></h5>";
-                            exc += '<h6>目标肌群</h6><h6>' + data.info[i].mtname + '</h6>';
-                            exc += '<h6>器械</h6><h6>' + data.info[i].eqtname + '</h6></div>';
-                            exc += '</div>';
-
-                            $("#excInfo").append(exc);
-                        }
-
-                    }
-                    else
-                    {
-                        //$("#excInfo").append("获取失败");
-                    }
-                }, 'json');
-            
             $(".ids").click(function() {
                 var filter_1 = "";
                 var filter_2 = "";
@@ -297,21 +224,31 @@
                     if (data.status)
                     {
                         //alert(data.info[0].ename);
-
+                        
                         $("#excInfo").empty();
                         for (var i = 0; i < data.info.length; i++)
                         {
-
+                            
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                            exc += '<div class="col-md-7"><h5>' + "<a href='{:U("Exercise / exc_all")}'>" + data.info[i].ename + "</a></h5>";
-                            exc += '<h6>目标肌群</h6><h6>' + data.info[i].mtname + '</h6>';
-                            exc += '<h6>器械</h6><h6>' + data.info[i].eqtname + '</h6></div>';
-                            exc += '</div>';
-
+                          exc +='<div class="col-md-7"><h5>'+"<a href={:U("Exercise/exc_all",'','')}/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
+                          exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
+                           exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
+                            exc +='</div>';
+          
                             $("#excInfo").append(exc);
+//                            $("#excInfo").append("<tr>");
+//                            $("#excInfo").append("<td><a href='{:U("Exercise/exc_all")}'>" + data.info[i].ename + "</a></td>");
+//                            $("#excInfo").append("<td>" + data.info[i].mtname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].etname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].eqtname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].ftname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].stname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].ltname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].sex + "</td>");
+//                            $("#excInfo").append("<tr>");
                         }
-
+                        
                     }
                     else
                     {
@@ -321,6 +258,16 @@
             });
 
         })
+
+    function action(obj){
+        var id  = obj.id;
+        var url = "{:U('Exercise/addaction')}";
+        $.post(url,{id:id},function(data){
+            if(data){
+               $("#"+obj.id).hide(); 
+            }
+        })
+    }
     </script>
 
 </block>

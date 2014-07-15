@@ -44,7 +44,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             
-            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color:white;">去健身啦.com<img src="Public\Home\images\favicon.ico"></a>
+            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color: #2a6496;background-color: #0aa;">去健身啦.com......</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -237,6 +237,10 @@ $("#Mall_nav").mouseleave(function(){
         </section>
     </div>
         </div>
+
+         
+
+        
 
     </div>
 </div>

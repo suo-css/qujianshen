@@ -130,5 +130,13 @@ return array(
         'domain'=>'onethinktest.u.qiniudn.com',
         'timeout'=>3600,
     ),
-
+    //邮件配置
+    'email'=>array(
+        'SYS_MAIL_SSL'      =>   TRUE,
+        'URL_MODEL' => 2,
+        'SYS_MAIL_SERVER'   =>  'smtp.qq.com',//邮件服务器
+        'SYS_MAIL_PORT'     =>  '465',//端口
+        'SYS_MAIL_USERNAME' =>  '455078389@qq.com',//邮箱
+        'SYS_MAIL_PWD'      =>  '57811568youyi',//密码
+    ),
 );
