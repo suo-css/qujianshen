@@ -1,0 +1,254 @@
+[ 2014-07-05T20:18:43+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2014-07-05T20:28:24+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+SQL: SHOW COLUMNS FROM `onethink_mainmuscletype` [ RunTime:0.025162s ]
+SQL: SELECT `id`,`name` FROM `onethink_mainmuscletype`  [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `onethink_exercisetype` [ RunTime:0.017500s ]
+SQL: SELECT `id`,`name` FROM `onethink_exercisetype`  [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `onethink_equiptype` [ RunTime:0.016987s ]
+SQL: SELECT `id`,`name` FROM `onethink_equiptype`  [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `onethink_forcetype` [ RunTime:0.017566s ]
+SQL: SELECT `id`,`name` FROM `onethink_forcetype`  [ RunTime:0.003722s ]
+SQL: SHOW COLUMNS FROM `onethink_sporttype` [ RunTime:0.020868s ]
+SQL: SELECT `id`,`name` FROM `onethink_sporttype`  [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `onethink_leveltype` [ RunTime:0.018602s ]
+SQL: SELECT `id`,`name` FROM `onethink_leveltype`  [ RunTime:0.001119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001484s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.135836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004776s ]
+
+[ 2014-07-05T20:28:25+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005879s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.015361s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.024896s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.014357s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.002422s ]
+
+[ 2014-07-05T20:28:29+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.023962s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.022783s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404563309 ) AND ( deadline = 0 OR deadline > 1404563309 ) ORDER BY `id` DESC  [ RunTime:0.002165s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001030s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002369s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001550s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404563309 ) AND ( deadline = 0 OR deadline > 1404563309 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001792s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.118640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003912s ]
+
+[ 2014-07-05T20:28:34+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004302s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.016158s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.013070s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.011841s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.003106s ]
+
+[ 2014-07-05T20:28:37+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.017259s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.002243s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.016681s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404563317 ) AND ( deadline = 0 OR deadline > 1404563317 ) ORDER BY `id` DESC  [ RunTime:0.001855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001124s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002245s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001424s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404563317 ) AND ( deadline = 0 OR deadline > 1404563317 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001722s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.103275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006078s ]
+
+[ 2014-07-05T20:28:42+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003107s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.017398s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002402s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.013708s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.013196s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.002243s ]
+
+[ 2014-07-05T20:28:45+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/Index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.018389s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.003337s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.017060s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404563325 ) AND ( deadline = 0 OR deadline > 1404563325 ) ORDER BY `id` DESC  [ RunTime:0.001622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000802s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001788s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000964s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404563325 ) AND ( deadline = 0 OR deadline > 1404563325 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001242s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.071580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002765s ]
+
+[ 2014-07-05T20:28:46+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/Index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.012149s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013007s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404563325 ) AND ( deadline = 0 OR deadline > 1404563325 ) ORDER BY `id` DESC  [ RunTime:0.001518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000533s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000868s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001527s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001055s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404563325 ) AND ( deadline = 0 OR deadline > 1404563325 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001555s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.069060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002753s ]
+
+[ 2014-07-05T20:28:49+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/profile.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001134s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003449s ]
+
+[ 2014-07-05T20:28:52+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003108s ]
+
+[ 2014-07-05T20:28:52+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003797s ]
+
+[ 2014-07-05T20:29:00+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004771s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.017139s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002998s ]
+NOTIC: [2] mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\wwwroot\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2014-07-05T20:29:03+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004369s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.018188s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.003500s ]
+
+[ 2014-07-05T20:29:04+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/verify.html&random=0.742845056578517
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004159s ]
+
+[ 2014-07-05T20:29:11+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004602s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.018685s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.003019s ]
+NOTIC: [2] mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) C:\wamp\www\wwwroot\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2014-07-05T20:29:15+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/Index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.015126s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.004178s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013470s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404563355 ) AND ( deadline = 0 OR deadline > 1404563355 ) ORDER BY `id` DESC  [ RunTime:0.001376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000800s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001597s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001576s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404563355 ) AND ( deadline = 0 OR deadline > 1404563355 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001384s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.065426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002970s ]
+
+[ 2014-07-05T20:29:18+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/profile.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.004093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004529s ]
+
+[ 2014-07-05T20:29:21+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000617s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001073s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.067839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004716s ]
+
+[ 2014-07-05T20:29:21+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/User/verify.html
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007799s ]
+

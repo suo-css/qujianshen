@@ -1,0 +1,132 @@
+[ 2014-07-06T12:03:36+08:00 ] 127.0.0.1 /wwwroot/index.php
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.016468s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001728s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.017693s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404619416 ) AND ( deadline = 0 OR deadline > 1404619416 ) ORDER BY `id` DESC  [ RunTime:0.001764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000760s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001514s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000955s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404619416 ) AND ( deadline = 0 OR deadline > 1404619416 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001234s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.078167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004006s ]
+
+[ 2014-07-06T12:04:15+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/exc_common.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000627s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001128s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.073243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004240s ]
+
+[ 2014-07-06T12:04:22+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+SQL: SHOW COLUMNS FROM `onethink_mainmuscletype` [ RunTime:0.016255s ]
+SQL: SELECT `id`,`name` FROM `onethink_mainmuscletype`  [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `onethink_exercisetype` [ RunTime:0.019119s ]
+SQL: SELECT `id`,`name` FROM `onethink_exercisetype`  [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `onethink_equiptype` [ RunTime:0.017026s ]
+SQL: SELECT `id`,`name` FROM `onethink_equiptype`  [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `onethink_forcetype` [ RunTime:0.017034s ]
+SQL: SELECT `id`,`name` FROM `onethink_forcetype`  [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `onethink_sporttype` [ RunTime:0.020551s ]
+SQL: SELECT `id`,`name` FROM `onethink_sporttype`  [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `onethink_leveltype` [ RunTime:0.015600s ]
+SQL: SELECT `id`,`name` FROM `onethink_leveltype`  [ RunTime:0.001278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001623s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.135165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003816s ]
+
+[ 2014-07-06T12:04:22+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.015060s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002076s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.016224s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.012777s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.002250s ]
+
+[ 2014-07-06T12:04:42+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005763s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.016751s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002545s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.015670s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.016222s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.003008s ]
+
+[ 2014-07-06T12:04:44+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004440s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.017508s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.003543s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.018739s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.017561s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('2','3','4','5','6','7','8','9','10','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.003647s ]
+
+[ 2014-07-06T12:04:49+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003784s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.016063s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.002620s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.016650s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.017274s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.003122s ]
+
+[ 2014-07-06T12:05:08+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.016771s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.002248s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.016235s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1404619508 ) AND ( deadline = 0 OR deadline > 1404619508 ) ORDER BY `id` DESC  [ RunTime:0.002033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000718s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001176s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002209s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001436s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1404619508 ) AND ( deadline = 0 OR deadline > 1404619508 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.001822s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.100063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004371s ]
+
+[ 2014-07-06T12:05:14+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Home/Exercise/search.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003209s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.012784s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.001841s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.013976s ]
+SQL: SHOW COLUMNS FROM `onethink_exercise` [ RunTime:0.014451s ]
+SQL: SELECT exc.ename as ename,t1.name as mtname,t2.name as etname,t3.name as eqtname,t4.name as ftname,t5.name as stname,exc.eid,t6.name as ltname,exc.sex,exc.rating FROM onethink_exercise exc INNER JOIN onethink_mainmuscletype t1 on exc.mainmuscleID = t1.id INNER JOIN onethink_exercisetype t2 on exc.exercisetypeID = t2.id INNER JOIN onethink_equiptype t3 on exc.equiptypeID = t3.id INNER JOIN onethink_forcetype t4 on exc.forcetypeID = t4.id INNER JOIN onethink_sporttype t5 on exc.sporttypeID = t5.id INNER JOIN onethink_leveltype t6 on exc.levelID = t6.id  WHERE ( `mainmuscleID` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17') ) AND ( `exercisetypeID` IN ('1','2','3') ) AND ( `equiptypeID` IN ('1','2') ) AND ( `forcetypeID` IN ('1','2','3','4') ) AND ( `sporttypeID` IN ('1','2') ) AND ( `levelID` IN ('1','2','3') )  [ RunTime:0.002909s ]
+
