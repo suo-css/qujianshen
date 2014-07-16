@@ -239,5 +239,15 @@ class ExerciseController extends HomeController {
         $this->res = $res;
         $this->display();
     }
+
+    public function exc_ind(){
+        $this->display();
+    }
+    public function exc_name(){
+        $this->display();
+    }
+    public function nav(){
+        $this->display();
+    }
 }
 

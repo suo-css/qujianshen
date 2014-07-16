@@ -214,7 +214,7 @@ $("#Mall_nav").mouseleave(function(){
             </div>
         
         
-        <div class="col-md-10" style="background-color: white;">
+       <div class="col-md-10" style="background-color: white;">
        <nav class="navbar" role="navigation" style="background-color: white; margin-top:-8px;margin-left: -15px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
         <!-- Brand and toggle get grouped for better mobile display -->
         
@@ -232,100 +232,85 @@ $("#Mall_nav").mouseleave(function(){
         </div><!-- /.navbar-collapse -->
 </nav>
     </div>
-    
-        <div class="col-md-5" id="video_con">
-video
-        </div>
-        <div class="col-md-5" id="describe_con">
-          describe
-        </div>
-        <div class="col-md-2" id="rating_con">
-
-            <div id="save_con">
-save
-            </div>
-        </div>
-
-        <div class="col-md-6" id="img1_con">
-
-        </div>
-        <div class="col-md-6" id="img2_con">
-
-        </div>
-        <div class="col-md-6" id="img3_con">
-
-        </div>
-        <div class="col-md-6" id="img4_con">
-
-        </div>
-
-        <div class="col-md-3" id="group_con">
-
-        </div>
-        <div class="col-md-9" id="text_con">
-
-        </div>
+ <div class="col-md-8">
+     <div>
+          <p>
+            <h3 style="margin-top:30px;font-family:宋体；margin-left:5px;">如何制定你的计划</h3>
+          </p>
+     </div>
+         <hr color="#BABABA" width:100%; size:1px; noshade />
  
-        <div class="col-md-7" id="relate_con">
 
-        </div>
-        <div class="col-md-5" id="top_con">
+     <div>
+        <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+            <img style="float:left" src="" alt="tub" />
+                <h4 >确定你的目标</h4>
+                   <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone</p>
+      </div>
 
-        </div>
+     <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+          <img src="" alt="tu1" style="padding-left:10px";>
+     </div>
+  
+   
+ </div> 
 
-        <div class="col-md-6" id="img1_con">
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+          <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
 
-        </div>
-        <div class="col-md-6" id="img2_con">
-
-        </div>
-        <div class="col-md-6" id="img3_con">
-
-        </div>
-        <div class="col-md-6" id="img4_con">
-
-        </div>
-
-
-
-<div class="col-md-6">
- <label class="item-label">内容<span class="check-tips"></span></label>
-          <label class="textarea input-large">
-                <textarea id="content"></textarea>
-          </label>
-          <span id="error_content" style="color:red;display:none;">内容不能为空!</span>
-        <br>
-        <div class="form-item">
-            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
-        </div>
-    <br>
-    <div id="save">
-      <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="wc_list_nod clearfix">
-                  <br>
-                  <div class="nod_inner clearfix" >
-                      <div><?php $result = review_comment($vo['uid']);echo $result['username']; ?></div>
-                      <div class="wb_cmR comm_main">
-                          <div class="content_txt"><?php echo ($vo["content"]); ?></div>
-                          <div class="content_txt"><?php echo ($vo["create_time"]); ?></div>
-                          <?php echo reply_comment($vo['cid']) ?>
-                          <div class="rl_area" id="<?php echo ($vo['cid']); ?>_reply">
-                                <a href="javascript:;" onclick="$(this).siblings('div').toggle();">回复</a>
-                                <div style="display:none;" id=<?php echo ($vo["uid"]); ?>_togg>
-                                  <label class="textarea input-large">
-                                        <textarea id="content_reply-<?php echo ($vo["cid"]); ?>"></textarea>
-                                  </label>  
-                                  <div style="display:none;color:red;">评论不能为空!</div>
-                                  <a href="javascript:;" id="content_submit" onclick='content_submit(this)' name=<?php echo ($vo["cid"]); ?>-<?php echo is_login() ?>>提交</a>
-                                </div>
-                          </div>
-                      </div>
-                  </div>
-                  <br>
-          </div><?php endforeach; endif; else: echo "" ;endif; ?>
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
     </div>
-	</div>
+  
+   
+ </div> 
 
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+               <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+               </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
+    </div>
+  
+   
+ </div> 
+
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
+    </div>
+  
+   
+   </div> 
+       <hr color="#ccc" width:100%; size:1px; noshade />
+   </div>
+
+</div>
+
+
+<a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
+
+          
 
          
 
@@ -367,73 +352,6 @@ save
 	}
 })();
 </script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-          var url     = "<?php echo U('Exercise/add_review');?>"; 
-          $("#submit").click(function(){
-            var eid     = "<?php echo $_GET['eid'] ?>";
-            if(eid==""){return}
-            var content = $("#content").val();
-            var content = content.replace(/[ ]/g,"");
-            if(content!=""){
-              $("#error_content").hide();
-              $.post(url,{content:content,eid:eid},function(data){
-                if(data.status){
-                  $("#content").val("");
-                  $("#save").prepend("<div class='nod_inner clearfix' ><div>"+data.name+"</div><div class='wb_cmR comm_main'><div class='content_txt'>"+data.content+"</div><div class='content_txt' >"+data.create_time+"</div><div class='rl_area' id="+data.cid+"_reply><a onclick=togg("+data.cid+");>回复</a><div style='display:none;' id="+data.cid+"-togg><label class='textarea input-large'><textarea id=content_reply-"+data.cid+"></textarea></label><div style='display:none;color:red;' id=nu-"+data.cid+">评论不能为空!</div><a onclick=content_submit(this); name="+data.cid+"-"+data.uid+">提交</a></div></div></div></div>").fadeIn();
-                }
-              },'json')
-            }else{
-              $("#error_content").show();
-            }
-          })
-    })
-
-    function togg(obj){
-      var togg = "#"+obj+"-togg";
-      $(togg).show();
-    }
-
-    function togghide(obj){
-      var togg = "#"+obj+"-togg";
-      $(togg).hide();
-    }
-
-    function reply_show(obj,type){
-      if(type=="show"){
-         var togg = "#nu-"+obj;
-        $(togg).show();
-      }else{
-        var togg = "#nu-"+obj;
-        $(togg).hide();
-      }
-    }
-
-    function content_submit(obj){
-        var id      = obj.name.split("-");
-        var cid     = id[0];
-        var reply   = "#content_reply-"+cid;
-        var content = "#content_reply-"+cid;
-        var content = $(content).val();
-        var content = content.replace(/[ ]/g,"");
-        var uid     = id[1];
-        var url     = "<?php echo U('Exercise/reply_save');?>";
-        var save    = "#"+cid+"_reply";
-        if(content!=""){
-          reply_show(cid,'hide');
-          togghide(cid)
-          $.post(url,{content:content,cid:cid,uid:uid},function(data){
-            if(data.status){
-              $(reply).val("");
-              $(save).before("<div style='margin-left:7px;' class='nod_inner clearfix' ><div>"+data.name+"</div><div class='wb_cmR comm_main'><div class='content_txt'>"+data.content+"</div><div class='content_txt'>"+data.create_time+"</div></div>").fadeIn();
-            }
-          },'json')
-        }else{
-           reply_show(cid,'show');
-        }
-    }
-  </script>
  <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
 <?php echo hook('pageFooter', 'widget');?>
