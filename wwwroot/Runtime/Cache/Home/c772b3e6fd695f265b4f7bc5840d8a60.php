@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -295,9 +295,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
@@ -318,12 +318,12 @@ $("#Mall_nav").mouseleave(function(){
                 .append(
                     "<div    id='div1'  ondrop='drop(event)'  ondragover='allowDrop(event)'   class='col-md-2'   style='height:300px; border: 1px solid  #BABABA; padding: 0; width:102px;>"
                      +"<div  style='text-align: right;'>"
-                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
                      +"<div>"
                      +"<div style='text-align: center; margin-top: 5px;'>"
                      + "<span>"+"aaaa"+"</span>"
                      +"<div style='text-align: center;'>"
-                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
                      +"<div>"
                      +"<div>"
                      + "<div  class='col-md-12'   style='height:70px; border: 1px solid  #BABABA; padding: 0; margin-top: 163px; text-align: center;'>" 
@@ -333,7 +333,7 @@ $("#Mall_nav").mouseleave(function(){
                      + "<div>"
                      +"<div style='width:80px; height:25px;  margin: 5px auto; color:#FFF'>"
 
-                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/up2.png' alt='copy copy ' >"
+                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/up2.png' alt='copy copy ' >"
                      + "<div>"
                      + "<div>"
                      + "<div>"
