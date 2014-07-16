@@ -249,5 +249,11 @@ class ExerciseController extends HomeController {
     public function nav(){
         $this->display();
     }
+
+    public function exc_doc(){
+        $list = M('document')->where(array('category_id'=>40))->select();
+        $this->assign('list',$list);
+        $this->display();
+    }
 }
 

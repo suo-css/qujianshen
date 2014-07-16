@@ -85,68 +85,47 @@
             
 
             
-    <div class="main-title">
-        <h2><?php echo isset($info['id'])?'编辑':'新增';?>后台菜单</h2>
-    </div>
-    <form action="<?php echo U();?>" method="post" class="form-horizontal">
+	<div class="main-title">
+		<h2>
+			<?php echo ($info['id']?'编辑':'新增'); ?>导航
+			<?php if(!empty($pid)): ?>[&nbsp;父导航：<a href="<?php echo U('index','pid='.$pid);?>"><?php echo ($parent["title"]); ?></a>&nbsp;]<?php endif; ?>
+		</h2>
+	</div>
+	<form action="<?php echo U();?>" method="post" class="form-horizontal">
+		<input type="hidden" name="pid" value="<?php echo ($pid); ?>">
+		<div class="form-item">
+			<label class="item-label">导航标题<span class="check-tips">（用于显示的文字）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="title" value="<?php echo ((isset($info["title"]) && ($info["title"] !== ""))?($info["title"]):''); ?>">
+			</div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">导航连接<span class="check-tips">（用于调转的URL，支持带http://的URL或U函数参数格式）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="url" value="<?php echo ((isset($info["url"]) && ($info["url"] !== ""))?($info["url"]):''); ?>">
+			</div>
+		</div>
         <div class="form-item">
-            <label class="item-label">标题<span class="check-tips">（用于后台显示的配置标题）</span></label>
+            <label class="item-label">新窗口打开<span class="check-tips">（是否新窗口打开链接）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="title" value="<?php echo ((isset($info["title"]) && ($info["title"] !== ""))?($info["title"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-small" name="sort" value="<?php echo ((isset($info["sort"]) && ($info["sort"] !== ""))?($info["sort"]):0); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="url" value="<?php echo ((isset($info["url"]) && ($info["url"] !== ""))?($info["url"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
-            <div class="controls">
-                <select name="pid">
-                    <?php if(is_array($Menus)): $i = 0; $__LIST__ = $Menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><option value="<?php echo ($menu["id"]); ?>"><?php echo ($menu["title_show"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                <select name="target">
+                     <option value="0">否</option>
+					 <option value="1">是</option>
                 </select>
             </div>
         </div>
-        <div class="form-item">
-            <label class="item-label">分组<span class="check-tips">（用于左侧分组二级菜单）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="group" value="<?php echo ((isset($info["group"]) && ($info["group"] !== ""))?($info["group"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">是否隐藏<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="hide" value="1">是</label>
-                <label class="radio"><input type="radio" name="hide" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">仅开发者模式可见<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="is_dev" value="1">是</label>
-                <label class="radio"><input type="radio" name="is_dev" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">说明<span class="check-tips">（菜单详细说明）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="tip" value="<?php echo ((isset($info["tip"]) && ($info["tip"] !== ""))?($info["tip"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <input type="hidden" name="id" value="<?php echo ((isset($info["id"]) && ($info["id"] !== ""))?($info["id"]):''); ?>">
-            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
-        </div>
-    </form>
+		<div class="form-item">
+			<label class="item-label">优先级<span class="check-tips">（导航显示顺序）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-small" name="sort" value="<?php echo ((isset($info["sort"]) && ($info["sort"] !== ""))?($info["sort"]):'0'); ?>">
+			</div>
+		</div>
+		<div class="form-item">
+			<input type="hidden" name="id" value="<?php echo ((isset($info["id"]) && ($info["id"] !== ""))?($info["id"]):''); ?>">
+			<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+		</div>
+	</form>
 
         </div>
         <div class="cont-ft">
@@ -241,13 +220,10 @@
         }();
     </script>
     
-    <script type="text/javascript">
-        Think.setValue("pid", <?php echo ((isset($info["pid"]) && ($info["pid"] !== ""))?($info["pid"]): 0); ?>);
-        Think.setValue("hide", <?php echo ((isset($info["hide"]) && ($info["hide"] !== ""))?($info["hide"]): 0); ?>);
-        Think.setValue("is_dev", <?php echo ((isset($info["is_dev"]) && ($info["is_dev"] !== ""))?($info["is_dev"]): 0); ?>);
-        //导航高亮
-        highlight_subnav('<?php echo U('index');?>');
-    </script>
+<script type="text/javascript" charset="utf-8">
+	//导航高亮
+	highlight_subnav('<?php echo U('index');?>');
+</script>
 
 </body>
 </html>

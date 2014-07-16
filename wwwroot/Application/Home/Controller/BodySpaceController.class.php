@@ -17,10 +17,7 @@ use OT\DataDictionary;
 class BodySpaceController extends HomeController {
 
 	//系统首页
-    public function index(){
-
-
-                 
+    public function index(){                 
         $this->display();
     }
 
