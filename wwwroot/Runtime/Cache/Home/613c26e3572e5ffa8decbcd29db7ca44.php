@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -256,11 +256,11 @@ $("#Mall_nav").mouseleave(function(){
                 <table class="filterTable" id="muscleFilterTable">
                     <tbody>
                     <?php if(is_array($_list)): $k = 0; $__LIST__ = $_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" type="checkbox" checked name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -278,11 +278,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list2)): $k = 0; $__LIST__ = $_list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" type="checkbox" checked name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -301,11 +301,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list3)): $k = 0; $__LIST__ = $_list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" type="checkbox" checked name="equiptypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="equiptypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -323,11 +323,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list4)): $k = 0; $__LIST__ = $_list4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" checked type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -346,11 +346,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list5)): $k = 0; $__LIST__ = $_list5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" checked type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -368,11 +368,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list6)): $k = 0; $__LIST__ = $_list6;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
+                                <td><input class="ids" checked type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -425,11 +425,11 @@ $("#Mall_nav").mouseleave(function(){
                             
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
+                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a>"+data.info[i].action+"</h5>";
                           exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
                            exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
                             exc +='</div>';
-          
+         // <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a>
                             $("#excInfo").append(exc);
 //                            $("#excInfo").append("<tr>");
 //                            $("#excInfo").append("<td><a href='<?php echo U("Exercise/exc_all");?>'>" + data.info[i].ename + "</a></td>");
@@ -457,8 +457,10 @@ $("#Mall_nav").mouseleave(function(){
         var id  = obj.id;
         var url = "<?php echo U('Exercise/addaction');?>";
         $.post(url,{id:id},function(data){
-            if(data){
+            if(data==1){
                $("#"+obj.id).hide(); 
+            }else{
+                alert('已经添加过了！');
             }
         })
     }
@@ -496,9 +498,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
