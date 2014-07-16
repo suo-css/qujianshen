@@ -163,8 +163,11 @@ function actiontype($id){
     if(!in_array($id,json_decode($result['actionid']))){
         return "<a href=javascript:; onclick=action(this); id=".$id.">添加为喜欢动作</a>";
     }else{
-        return '';
+        return '<img src="http://www.easyicon.net/api/resize_png_new.php?id=1160318&size=128" height="20" width="20">';
     }
+  }else{
+      $url = U('user/login');
+      return "<a href=javascript:if(confirm('你还没有登陆!确定去登陆吗？'))location='".$url."'>添加为喜欢动作</a>";
   }
 }
 
