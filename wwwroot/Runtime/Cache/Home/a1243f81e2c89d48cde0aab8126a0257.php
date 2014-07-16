@@ -214,31 +214,41 @@ $("#Mall_nav").mouseleave(function(){
             </div>
         
         
-      <div class="span9">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
+        <div class="col-md-10" style="background-color: white;">
+       <nav class="navbar" role="navigation" style="background-color: white; margin-top:-8px;margin-left: -15px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        
 
-			<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="">
-					<h3 class="ellipsis"><a href="<?php echo U('Article/detail?id='.$data['id']);?>"><?php echo ($data["title"]); ?></a></h3>
-				</div>
-				<div>
-					<p class="lead"><?php echo ($data["description"]); ?></p>
-				</div>
-				<div>
-					<span><a href="<?php echo U('Article/detail?id='.$data['id']);?>">查看全文</a></span>
-					<span class="pull-right">
-						<span class="author"><?php echo (get_username($data["uid"])); ?></span>&nbsp;&nbsp;
-						<span>发表于 <?php echo (date('Y-m-d H:i:s',$data["create_time"])); ?></span>
-						<span>阅读(<?php echo ($data["view"]); ?>)</span>&nbsp;&nbsp;
-				</div>
-				<hr/><?php endforeach; endif; else: echo "" ;endif; ?>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style=" padding-top: 3px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+            <ul class="nav navbar-nav">
+                <li><a href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身主页</a></li>
+                <li><a href="<?php echo U('Exercise/exc_filter');?>" id="filter_nav" >过滤器</a></li>
+                <li><a href="<?php echo U('Exercise/exc_ind');?>" id="tml_nav">制定计划</a></li>
+                <li><a href="<?php echo U('Exercise/exc_doc');?>" id="doc_nav">文章</a></li>
+                <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
+                <li><a href="#" id="Mall_nav">商城</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+</nav>
+    </div>
+    <div class="col-md-8">
+<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$doc): $mod = ($i % 2 );++$i;?><div>
+                        <p class="lead"><?php echo ($doc["description"]); ?></p>
+                    </div>
+                    <div>
+                        <span><a href="<?php echo U('Article/detail?id='.$doc['id']);?>">查看全文</a></span>
+                        <span class="pull-right">
+                            <span class="author"><?php echo (get_username($doc["uid"])); ?></span>
+                            <span>于 <?php echo (date('Y-m-d H:i',$doc["create_time"])); ?></span> 发表在 <span>
+                            <a href="<?php echo U('Article/lists?category='.get_category_name($doc['category_id']));?>"><?php echo (get_category_title($doc["category_id"])); ?></a></span> ( 阅读：<?php echo ($doc["view"]); ?> )
+                    </span>
+                </div>
+                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
 
-            <div class="onethink pagination pagination-right pagination-large">
-                <?php $__PAGE__ = new \Think\Page(get_list_count($category['id']), $category['list_row']);echo $__PAGE__->show(); ?>
-            </div>
-        </section>
-      </div>
+        <div class="page">
+            <?php echo ($_page); ?>
+        </div>
     </div>
 
          

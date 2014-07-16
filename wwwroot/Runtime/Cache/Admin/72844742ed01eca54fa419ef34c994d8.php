@@ -144,36 +144,28 @@
             
 
             
-	<!-- 标题 -->
+	<!-- 标题栏 -->
 	<div class="main-title">
-		<h2>
-		草稿箱(<?php echo ($_total); ?>)
-		</h2>
+		<h2>回收站(<?php echo count($list);?>)</h2>
 	</div>
 
-	<!-- 按钮工具栏 -->
-	<div class="cf">
-		<div class="fl">
-			<button class="btn ajax-post confirm" target-form="ids" url="<?php echo U("Article/setStatus",array("status"=>-1));?>">删 除</button>
-		</div>
+    <div class="tools auth-botton">
+        <button url="<?php echo U('article/clear');?>" class="btn ajax-get">清 空</button>
+        <button url="<?php echo U('article/permit');?>" class="btn ajax-post" target-form="ids">还 原</button>
+    </div>
 
-		<!-- 高级搜索 -->
-		<div class="search-form fr cf">
-		</div>
-	</div>
-
-
-	<!-- 数据表格 -->
-    <div class="data-table">
-	<table class="">
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+			<table class="">
     <thead>
         <tr>
 		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
 		<th class="">编号</th>
 		<th class="">标题</th>
+		<th class="">创建者</th>
 		<th class="">类型</th>
 		<th class="">分类</th>
-		<th class="">最后更新</th>
+		<th class="">删除时间</th>
 		<th class="">操作</th>
 		</tr>
     </thead>
@@ -181,25 +173,21 @@
 		<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
             <td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
 			<td><?php echo ($vo["id"]); ?> </td>
-			<td><a data-id="<?php echo ($vo["id"]); ?>" href="<?php echo U('Article/edit?cate_id='.$vo['category_id'].'&id='.$vo['id']);?>"><?php echo ($vo["title"]); ?></a></td>
-			<td><?php echo get_document_type($vo['type']);?></td>
+			<td><?php echo ($vo["title"]); ?></td>
+			<td><?php echo ($vo["username"]); ?> </td>
+			<td><span><?php echo get_document_type($vo['type']);?></span></td>
 			<td><span><?php echo get_cate($vo['category_id']);?></span></td>
 			<td><span><?php echo (time_format($vo["update_time"])); ?></span></td>
-			<td><a href="<?php echo U('Article/edit?cate_id='.$vo['category_id'].'&id='.$vo['id']);?>">编辑</a>
-				<a href="<?php echo U('Article/setstatus?ids='.$vo['id'].'&status='.abs(1-$vo['status']));?>" class="ajax-get"><?php echo (show_status_op($vo["status"])); ?></a>
-				<a href="<?php echo U('Article/setStatus?status=-1&ids='.$vo['id']);?>" class="confirm ajax-get">删除</a>
+			<td><a href="<?php echo U('article/permit?ids='.$vo['id']);?>" class="ajax-get">还原</a>
                 </td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 	</tbody>
     </table> 
-        	</div>
-
-	<!-- 分页 -->
+        
+	</div>
     <div class="page">
         <?php echo ($_page); ?>
     </div>
-</div>
-
 
         </div>
         <div class="cont-ft">
@@ -294,13 +282,5 @@
         }();
     </script>
     
-<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
-<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
-<script type="text/javascript">
-
-</script>
-
 </body>
 </html>

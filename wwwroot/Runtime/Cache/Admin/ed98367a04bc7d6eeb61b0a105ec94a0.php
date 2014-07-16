@@ -85,68 +85,55 @@
             
 
             
+    <!-- 标题栏 -->
     <div class="main-title">
-        <h2><?php echo isset($info['id'])?'编辑':'新增';?>后台菜单</h2>
+        <h2>[<?php echo ($model['title']); ?>] 列表</h2>
     </div>
-    <form action="<?php echo U();?>" method="post" class="form-horizontal">
-        <div class="form-item">
-            <label class="item-label">标题<span class="check-tips">（用于后台显示的配置标题）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="title" value="<?php echo ((isset($info["title"]) && ($info["title"] !== ""))?($info["title"]):''); ?>">
-            </div>
+	<div class="cf">
+		<div class="fl">
+		<?php if(empty($model["extend"])): ?><div class="tools">
+				<a class="btn" href="<?php echo U('add?model='.$model['id']);?>">新 增</a>
+				<button class="btn ajax-post confirm" target-form="ids" url="<?php echo U('del?model='.$model['id']);?>">删 除</button>
+			</div><?php endif; ?>
+		</div>
+		<!-- 高级搜索 -->
+		<div class="search-form fr cf">
+			<div class="sleft">
+				<input type="text" name="<?php echo ((isset($model['search_key']) && ($model['search_key'] !== ""))?($model['search_key']):'title'); ?>" class="search-input" value="<?php echo I('title');?>" placeholder="请输入关键字">
+				<a class="sch-btn" href="javascript:;" id="search" url="<?php echo U('Think/lists','model='.$model['name'],false);?>"><i class="btn-search"></i></a>
+			</div>
+
+		</div>
+	</div>
+
+
+    <!-- 数据列表 -->
+    <div class="data-table">
+        <div class="data-table table-striped">
+            <table>
+                <!-- 表头 -->
+                <thead>
+                    <tr>
+                        <th class="row-selected row-selected">
+                            <input class="check-all" type="checkbox">
+                        </th>
+                        <?php if(is_array($list_grids)): $i = 0; $__LIST__ = $list_grids;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$field): $mod = ($i % 2 );++$i;?><th><?php echo ($field["title"]); ?></th><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tr>
+                </thead>
+
+                <!-- 列表 -->
+                <tbody>
+                    <?php if(is_array($list_data)): $i = 0; $__LIST__ = $list_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                            <td><input class="ids" type="checkbox" value="<?php echo ($data['id']); ?>" name="ids[]"></td>
+                            <?php if(is_array($list_grids)): $i = 0; $__LIST__ = $list_grids;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$grid): $mod = ($i % 2 );++$i;?><td><?php echo get_list_field($data,$grid,$model);?></td><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                </tbody>
+            </table>
         </div>
-        <div class="form-item">
-            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-small" name="sort" value="<?php echo ((isset($info["sort"]) && ($info["sort"] !== ""))?($info["sort"]):0); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="url" value="<?php echo ((isset($info["url"]) && ($info["url"] !== ""))?($info["url"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
-            <div class="controls">
-                <select name="pid">
-                    <?php if(is_array($Menus)): $i = 0; $__LIST__ = $Menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><option value="<?php echo ($menu["id"]); ?>"><?php echo ($menu["title_show"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                </select>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">分组<span class="check-tips">（用于左侧分组二级菜单）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="group" value="<?php echo ((isset($info["group"]) && ($info["group"] !== ""))?($info["group"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">是否隐藏<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="hide" value="1">是</label>
-                <label class="radio"><input type="radio" name="hide" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">仅开发者模式可见<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="is_dev" value="1">是</label>
-                <label class="radio"><input type="radio" name="is_dev" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">说明<span class="check-tips">（菜单详细说明）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="tip" value="<?php echo ((isset($info["tip"]) && ($info["tip"] !== ""))?($info["tip"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <input type="hidden" name="id" value="<?php echo ((isset($info["id"]) && ($info["id"] !== ""))?($info["id"]):''); ?>">
-            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
-        </div>
-    </form>
+    </div>
+    <div class="page">
+        <?php echo ((isset($_page) && ($_page !== ""))?($_page):''); ?>
+    </div>
 
         </div>
         <div class="cont-ft">
@@ -241,13 +228,31 @@
         }();
     </script>
     
-    <script type="text/javascript">
-        Think.setValue("pid", <?php echo ((isset($info["pid"]) && ($info["pid"] !== ""))?($info["pid"]): 0); ?>);
-        Think.setValue("hide", <?php echo ((isset($info["hide"]) && ($info["hide"] !== ""))?($info["hide"]): 0); ?>);
-        Think.setValue("is_dev", <?php echo ((isset($info["is_dev"]) && ($info["is_dev"] !== ""))?($info["is_dev"]): 0); ?>);
-        //导航高亮
-        highlight_subnav('<?php echo U('index');?>');
-    </script>
+<script type="text/javascript">
+$(function(){
+	//搜索功能
+	$("#search").click(function(){
+		var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+        query = query.replace(/^&/g,'');
+        if( url.indexOf('?')>0 ){
+            url += '&' + query;
+        }else{
+            url += '?' + query;
+        }
+		window.location.href = url;
+	});
+
+    //回车自动提交
+    $('.search-form').find('input').keyup(function(event){
+        if(event.keyCode===13){
+            $("#search").click();
+        }
+    });
+
+})
+</script>
 
 </body>
 </html>

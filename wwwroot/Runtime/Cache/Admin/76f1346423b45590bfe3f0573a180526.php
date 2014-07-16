@@ -85,68 +85,73 @@
             
 
             
-    <div class="main-title">
-        <h2><?php echo isset($info['id'])?'编辑':'新增';?>后台菜单</h2>
-    </div>
-    <form action="<?php echo U();?>" method="post" class="form-horizontal">
-        <div class="form-item">
-            <label class="item-label">标题<span class="check-tips">（用于后台显示的配置标题）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="title" value="<?php echo ((isset($info["title"]) && ($info["title"] !== ""))?($info["title"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-small" name="sort" value="<?php echo ((isset($info["sort"]) && ($info["sort"] !== ""))?($info["sort"]):0); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="url" value="<?php echo ((isset($info["url"]) && ($info["url"] !== ""))?($info["url"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
-            <div class="controls">
-                <select name="pid">
-                    <?php if(is_array($Menus)): $i = 0; $__LIST__ = $Menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><option value="<?php echo ($menu["id"]); ?>"><?php echo ($menu["title_show"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                </select>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">分组<span class="check-tips">（用于左侧分组二级菜单）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="group" value="<?php echo ((isset($info["group"]) && ($info["group"] !== ""))?($info["group"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">是否隐藏<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="hide" value="1">是</label>
-                <label class="radio"><input type="radio" name="hide" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">仅开发者模式可见<span class="check-tips"></span></label>
-            <div class="controls">
-                <label class="radio"><input type="radio" name="is_dev" value="1">是</label>
-                <label class="radio"><input type="radio" name="is_dev" value="0">否</label>
-            </div>
-        </div>
-        <div class="form-item">
-            <label class="item-label">说明<span class="check-tips">（菜单详细说明）</span></label>
-            <div class="controls">
-                <input type="text" class="text input-large" name="tip" value="<?php echo ((isset($info["tip"]) && ($info["tip"] !== ""))?($info["tip"]):''); ?>">
-            </div>
-        </div>
-        <div class="form-item">
-            <input type="hidden" name="id" value="<?php echo ((isset($info["id"]) && ($info["id"] !== ""))?($info["id"]):''); ?>">
-            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
-        </div>
-    </form>
+	<div class="main-title cf">
+		<h2>新增模型</h2>
+	</div>
+
+	<!-- 标签页导航 -->
+	<div class="tab-wrap">
+		<div class="tab-content">
+			<!-- 表单 -->
+			<form id="form" action="<?php echo U('update');?>" method="post" class="form-horizontal doc-modal-form">
+				<!-- 基础 -->
+				<div id="tab1" class="tab-pane in tab1">
+					<div class="form-item cf">
+						<label class="item-label">模型标识<span class="check-tips">（请输入文档模型标识）</span></label>
+						<div class="controls">
+							<input type="text" class="text input-large" name="name" value="">
+						</div>
+					</div>
+					<div class="form-item cf">
+						<label class="item-label">模型名称<span class="check-tips">（请输入模型的名称）</span></label>
+						<div class="controls">
+							<input type="text" class="text input-large" name="title" value="">
+						</div>
+					</div>
+					<div class="form-item cf">
+						<label class="item-label">模型类型<span class="check-tips">（目前支持独立模型和文档模型）</span></label>
+						<div class="controls">
+							<select name="extend">
+								<option value="0">独立模型</option>
+								<option value="1">文档模型</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item cf">
+						<label class="item-label">引擎类型<span class="check-tips"></span></label>
+						<div class="controls">
+							<select name="engine_type">
+								<option value="MyISAM">MyISAM</option>
+								<option value="InnoDB">InnoDB</option>
+                                <option value="MEMORY">MEMORY</option>
+                                <option value="BLACKHOLE">BLACKHOLE</option>
+                                <option value="MRG_MYISAM">MRG_MYISAM</option>
+                                <option value="ARCHIVE">ARCHIVE</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item cf">
+						<label class="item-label">是否需要主键<span class="check-tips">（选“是”则会新建默认的id字段作为主键）</span></label>
+						<div class="controls">
+							<select name="need_pk">
+								<option value="1" selected="selected">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<!-- 按钮 -->
+				<div class="form-item cf">
+					<label class="item-label"></label>
+					<div class="controls edit_sort_btn">
+						<button class="btn submit-btn ajax-post no-refresh" type="submit" target-form="form-horizontal">确 定</button>
+						<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
         </div>
         <div class="cont-ft">
@@ -241,13 +246,52 @@
         }();
     </script>
     
-    <script type="text/javascript">
-        Think.setValue("pid", <?php echo ((isset($info["pid"]) && ($info["pid"] !== ""))?($info["pid"]): 0); ?>);
-        Think.setValue("hide", <?php echo ((isset($info["hide"]) && ($info["hide"] !== ""))?($info["hide"]): 0); ?>);
-        Think.setValue("is_dev", <?php echo ((isset($info["is_dev"]) && ($info["is_dev"] !== ""))?($info["is_dev"]): 0); ?>);
-        //导航高亮
-        highlight_subnav('<?php echo U('index');?>');
-    </script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery.dragsort-0.5.1.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    //导航高亮
+    highlight_subnav('<?php echo U('Model/index');?>');
+
+    $(function(){
+    	showTab();
+    })
+//拖曳插件初始化
+$(function(){
+	$(".dragsort").dragsort({
+	     dragSelector:'li',
+	     placeHolderTemplate: '<li class="draging-place">&nbsp;</li>',
+	     dragBetween:true,	//允许拖动到任意地方
+	     dragEnd:function(){
+	     	updateVal();
+	     }
+	 });
+
+	$('#sortUl li b').click(function(){
+		$(this).parent().remove();
+		updateVal();
+	});
+
+	// 更新排序后的隐藏域的值
+	function updateVal() {
+		var sortVal = [];
+		var i = 1;
+		var val = '';
+	   	$('#base li').each(function(){
+	   		sortVal[i++] = $(this).find('em').text();
+	   	});
+	   	i = -1;
+	   	$('#extend li').each(function(){
+	   		sortVal[i--] = $(this).find('em').text();
+	   	});
+	   	//将排序数组拼接成json格式字符串
+	   	val += "[";
+	   	for (k in sortVal){
+	   		val += "\"" + sortVal[k] + "\"" + ":" + k + ",";
+	   	}
+	   	val = val.substr(0,val.length - 1) + "]";
+	    $("input[name='fields']").val(val);
+	}
+})
+</script>
 
 </body>
 </html>
