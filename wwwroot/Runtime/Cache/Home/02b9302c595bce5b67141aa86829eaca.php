@@ -214,7 +214,7 @@ $("#Mall_nav").mouseleave(function(){
             </div>
         
         
-        <div class="col-md-10" style="background-color: white;">
+       <div class="col-md-10" style="background-color: white;">
        <nav class="navbar" role="navigation" style="background-color: white; margin-top:-8px;margin-left: -15px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
         <!-- Brand and toggle get grouped for better mobile display -->
         
@@ -232,238 +232,85 @@ $("#Mall_nav").mouseleave(function(){
         </div><!-- /.navbar-collapse -->
 </nav>
     </div>
-    <div class="col-md-8">
-        <!-- Contents
-        ================================================== -->
-        <h3> 过滤后的动作 </h3>
-        <div id = "excInfo">
-           
-        </div>
+ <div class="col-md-8">
+     <div>
+          <p>
+            <h3 style="margin-top:30px;font-family:宋体；margin-left:5px;">如何制定你的计划</h3>
+          </p>
+     </div>
+         <hr color="#BABABA" width:100%; size:1px; noshade />
+ 
+
+     <div>
+        <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+            <img style="float:left" src="" alt="tub" />
+                <h4 >确定你的目标</h4>
+                   <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone</p>
+      </div>
+
+     <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+          <img src="" alt="tu1" style="padding-left:10px";>
+     </div>
+  
+   
+ </div> 
+
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+          <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
     </div>
-    <div id="finderLeft" class="col-md-2">
+  
+   
+ </div> 
 
-        <h4>
-            --动作过滤器--
-        </h4>
-        <div class="filterSep"></div>
-        <div id="Filters">
-            <div id="muscleFilter">
-                <h4>
-                    <div style="padding-bottom: 0px">肌群:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="muscleFilterTable">
-                    <tbody>
-                    <?php if(is_array($_list)): $k = 0; $__LIST__ = $_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+               <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+               </p>
+   </div>
 
-                    </tbody>
-                </table>
-
-                <h4>
-                    <div style="padding-bottom: 0px">锻炼类型:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="ExerciseTypeTable">
-
-                    <tbody>
-                    <?php if(is_array($_list2)): $k = 0; $__LIST__ = $_list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-
-                    </tbody>
-                </table>
-
-
-                <h4>
-                    <div style="padding-bottom: 0px">设备类型:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="EquipTypeTable">
-
-                    <tbody>
-                    <?php if(is_array($_list3)): $k = 0; $__LIST__ = $_list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-
-                    </tbody>
-                </table>
-
-                <h4>
-                    <div style="padding-bottom: 0px">力量类型:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="ForceTypeTable">
-
-                    <tbody>
-                    <?php if(is_array($_list4)): $k = 0; $__LIST__ = $_list4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-
-                    </tbody>
-                </table>
-
-
-                <h4>
-                    <div style="padding-bottom: 0px">运行类型:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="SportTypeTable">
-
-                    <tbody>
-                    <?php if(is_array($_list5)): $k = 0; $__LIST__ = $_list5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-
-                    </tbody>
-                </table>
-
-                <h4>
-                    <div style="padding-bottom: 0px">专家类型:&nbsp;&nbsp;
-                        <a href="javascript: //" class="blueLink">全选</a>
-                    </div>
-                </h4>
-                <table class="filterTable" id="LevelTypeTable">
-
-                    <tbody>
-                    <?php if(is_array($_list6)): $k = 0; $__LIST__ = $_list6;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
-                                <td>
-                                    <?php echo ($vo); ?>
-                                </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
-                            <td>
-                                <?php echo ($vo); ?>
-                            </td>
-                            </tr><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
     </div>
-    
-    <script type="text/javascript" >
-        $("document").ready(function() {
-            $(".ids").click(function() {
-                var filter_1 = "";
-                var filter_2 = "";
-                var filter_3 = "";
-                var filter_4 = "";
-                var filter_5 = "";
-                var filter_6 = "";
-                $("input[name='mainmuscleid']:checkbox:checked").each(function() {
-                    filter_1 += $(this).val() + ',';
-                });
-                $("input[name='exercisetypeid']:checkbox:checked").each(function() {
-                    filter_2 += $(this).val() + ',';
-                });
-                $("input[name='equiptypeid']:checkbox:checked").each(function() {
-                    filter_3 += $(this).val() + ',';
-                });
-                $("input[name='forcetypeid']:checkbox:checked").each(function() {
-                    filter_4 += $(this).val() + ',';
-                });
-                $("input[name='sporttypeid']:checkbox:checked").each(function() {
-                    filter_5 += $(this).val() + ',';
-                });
-                $("input[name='leveltypeid']:checkbox:checked").each(function() {
-                    filter_6 += $(this).val() + ',';
-                });
+  
+   
+ </div> 
 
-                $.post("<?php echo U('Exercise/search');?>", {'filter_1': filter_1, 'filter_2': filter_2,
-                    'filter_3': filter_3, 'filter_4': filter_4, 'filter_5': filter_5, 'filter_6': filter_6},
-                function(data) {
-                    if (data.status)
-                    {
-                        //alert(data.info[0].ename);
-                        
-                        $("#excInfo").empty();
-                        for (var i = 0; i < data.info.length; i++)
-                        {
-                            
-                            var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
-                            exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
-                          exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
-                           exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
-                            exc +='</div>';
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
+    </div>
+  
+   
+   </div> 
+       <hr color="#ccc" width:100%; size:1px; noshade />
+   </div>
+
+</div>
+
+
+<a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
+
           
-                            $("#excInfo").append(exc);
-//                            $("#excInfo").append("<tr>");
-//                            $("#excInfo").append("<td><a href='<?php echo U("Exercise/exc_all");?>'>" + data.info[i].ename + "</a></td>");
-//                            $("#excInfo").append("<td>" + data.info[i].mtname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].etname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].eqtname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].ftname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].stname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].ltname + "</td>");
-//                            $("#excInfo").append("<td>" + data.info[i].sex + "</td>");
-//                            $("#excInfo").append("<tr>");
-                        }
-                        
-                    }
-                    else
-                    {
-                        //$("#excInfo").append("获取失败");
-                    }
-                }, 'json');
-            });
-
-        })
-
-    function action(obj){
-        var id  = obj.id;
-        var url = "<?php echo U('Exercise/addaction');?>";
-        $.post(url,{id:id},function(data){
-            if(data){
-               $("#"+obj.id).hide(); 
-            }
-        })
-    }
-    </script>
-
 
          
 

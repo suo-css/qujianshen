@@ -1,0 +1,1267 @@
+[ 2014-07-16T08:45:52+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004403s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004338s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004375s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004648s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2014-07-16T08:45:58+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/index.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2014-07-16T08:46:16+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/nav.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2014-07-16T08:48:09+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.029775s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.019408s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 375 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2014-07-16T08:51:04+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.004396s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 375 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2014-07-16T08:51:43+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2014-07-16T08:56:24+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/nav.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2014-07-16T08:58:34+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: res C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\02b9302c595bce5b67141aa86829eaca.php 第 297 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2014-07-16T08:59:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2014-07-16T08:59:23+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2014-07-16T09:00:00+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004105s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004085s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004346s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004361s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2014-07-16T09:00:46+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004581s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004225s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004305s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004270s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000174s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000479s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2014-07-16T09:00:50+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004190s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004101s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004180s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004248s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2014-07-16T09:00:51+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004228s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004073s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004464s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004312s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2014-07-16T09:00:59+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.005231s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004214s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004525s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004223s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000194s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-07-16T09:02:43+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2014-07-16T09:03:37+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2014-07-16T09:03:39+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004120s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004357s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004427s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004389s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000173s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2014-07-16T09:03:41+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004145s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004346s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004360s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.006264s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000311s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2014-07-16T09:04:10+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004479s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.005683s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004236s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004053s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2014-07-16T09:04:18+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004273s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004325s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004204s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.006452s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000184s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2014-07-16T09:04:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004070s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.005549s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004377s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004327s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000279s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-07-16T09:04:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+SQL: SHOW COLUMNS FROM `onethink_mainmuscletype` [ RunTime:0.133864s ]
+SQL: SELECT `id`,`name` FROM `onethink_mainmuscletype`  [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `onethink_exercisetype` [ RunTime:0.020594s ]
+SQL: SELECT `id`,`name` FROM `onethink_exercisetype`  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `onethink_equiptype` [ RunTime:0.033282s ]
+SQL: SELECT `id`,`name` FROM `onethink_equiptype`  [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `onethink_forcetype` [ RunTime:0.009185s ]
+SQL: SELECT `id`,`name` FROM `onethink_forcetype`  [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `onethink_sporttype` [ RunTime:0.012153s ]
+SQL: SELECT `id`,`name` FROM `onethink_sporttype`  [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `onethink_leveltype` [ RunTime:0.007123s ]
+SQL: SELECT `id`,`name` FROM `onethink_leveltype`  [ RunTime:0.000251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2014-07-16T09:04:23+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004460s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004251s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004257s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.005624s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000496s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000223s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2014-07-16T09:04:25+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004380s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004258s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.006556s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004145s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000287s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000198s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2014-07-16T09:04:28+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004066s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004244s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.005091s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004549s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000197s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2014-07-16T09:04:29+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004163s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004147s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.005329s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004804s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000178s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2014-07-16T09:04:29+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+SQL: SHOW COLUMNS FROM `onethink_mainmuscletype` [ RunTime:0.004256s ]
+SQL: SELECT `id`,`name` FROM `onethink_mainmuscletype`  [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `onethink_exercisetype` [ RunTime:0.004320s ]
+SQL: SELECT `id`,`name` FROM `onethink_exercisetype`  [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `onethink_equiptype` [ RunTime:0.006724s ]
+SQL: SELECT `id`,`name` FROM `onethink_equiptype`  [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `onethink_forcetype` [ RunTime:0.004478s ]
+SQL: SELECT `id`,`name` FROM `onethink_forcetype`  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `onethink_sporttype` [ RunTime:0.004015s ]
+SQL: SELECT `id`,`name` FROM `onethink_sporttype`  [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `onethink_leveltype` [ RunTime:0.004309s ]
+SQL: SELECT `id`,`name` FROM `onethink_leveltype`  [ RunTime:0.000210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-07-16T09:04:35+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004184s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.006717s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 243 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004130s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004079s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000196s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002092s ]
+
+[ 2014-07-16T09:05:39+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004737s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.005850s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 245 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004534s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004495s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2014-07-16T09:05:41+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004116s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.004087s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 245 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.004108s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004450s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000175s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2014-07-16T09:05:42+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_filter.html
+SQL: SHOW COLUMNS FROM `onethink_mainmuscletype` [ RunTime:0.004557s ]
+SQL: SELECT `id`,`name` FROM `onethink_mainmuscletype`  [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `onethink_exercisetype` [ RunTime:0.005763s ]
+SQL: SELECT `id`,`name` FROM `onethink_exercisetype`  [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `onethink_equiptype` [ RunTime:0.004066s ]
+SQL: SELECT `id`,`name` FROM `onethink_equiptype`  [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `onethink_forcetype` [ RunTime:0.004184s ]
+SQL: SELECT `id`,`name` FROM `onethink_forcetype`  [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `onethink_sporttype` [ RunTime:0.004238s ]
+SQL: SELECT `id`,`name` FROM `onethink_sporttype`  [ RunTime:0.000216s ]
+SQL: SHOW COLUMNS FROM `onethink_leveltype` [ RunTime:0.003960s ]
+SQL: SELECT `id`,`name` FROM `onethink_leveltype`  [ RunTime:0.000203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2014-07-16T09:05:43+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2014-07-16T09:05:44+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_common.html
+SQL: SHOW COLUMNS FROM `onethink_goalmodule` [ RunTime:0.004202s ]
+SQL: SELECT * FROM `onethink_goalmodule`  [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `onethink_goalcontinuetype` [ RunTime:0.008321s ]
+SQL: SELECT * FROM `onethink_goalcontinuetype` WHERE ( `status` = 1 )  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: tinue C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\78f19b806e1cecf46779d8356fee07d0.php 第 245 行.
+SQL: SHOW COLUMNS FROM `onethink_goaltype` [ RunTime:0.005119s ]
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 1 )  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_goal` [ RunTime:0.004576s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 5 ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goaltype` WHERE ( `status` = 1 ) AND ( `moduleid` = 2 )  [ RunTime:0.000222s ]
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 3 ) LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\qujianshen\wwwroot\Application\Home\Common\function.php 第 135 行.
+SQL: SELECT * FROM `onethink_goal` WHERE ( `status` = 1 ) AND ( `uid` = 0 ) AND ( `detailtypeid` = 4 ) LIMIT 1   [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2014-07-16T09:06:01+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2014-07-16T09:10:01+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2014-07-16T09:12:02+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2014-07-16T09:13:38+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2014-07-16T09:13:47+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2014-07-16T09:14:28+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2014-07-16T09:14:40+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2014-07-16T09:15:30+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2014-07-16T09:15:50+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2014-07-16T09:19:34+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000463s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2014-07-16T09:20:39+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002078s ]
+
+[ 2014-07-16T09:21:38+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-07-16T09:21:40+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_tml.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2014-07-16T09:23:08+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-07-16T09:23:11+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2014-07-16T09:23:14+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.024090s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.007890s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1405473794 ) AND ( deadline = 0 OR deadline > 1405473794 ) ORDER BY `id` DESC  [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000209s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1405473794 ) AND ( deadline = 0 OR deadline > 1405473794 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000285s ]
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 50 bytes C:\wamp\www\qujianshen\wwwroot\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.050311s ]
+SQL: SELECT `id`,`username`,`email`,`mobile`,`status` FROM `onethink_ucenter_member` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000434s ]
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 667 bytes C:\wamp\www\qujianshen\wwwroot\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.004521s ]
+SQL: SELECT * FROM `onethink_category` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.096321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2014-07-16T09:23:29+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.006046s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.004384s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1405473809 ) AND ( deadline = 0 OR deadline > 1405473809 ) ORDER BY `id` DESC  [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000210s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1405473809 ) AND ( deadline = 0 OR deadline > 1405473809 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2014-07-16T09:23:33+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.004765s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.004535s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1405473813 ) AND ( deadline = 0 OR deadline > 1405473813 ) ORDER BY `id` DESC  [ RunTime:0.000333s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000319s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` = 2 ) AND ( `create_time` < 1405473813 ) AND ( deadline = 0 OR deadline > 1405473813 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-07-16T09:24:30+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2014-07-16T09:26:07+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2014-07-16T09:26:09+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_tml.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-07-16T09:26:14+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_mte.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Undefined variable: res C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\c772b3e6fd695f265b4f7bc5840d8a60.php 第 264 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2014-07-16T09:26:23+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_ind.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2014-07-16T09:26:25+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2014-07-16T09:26:27+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_tml.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2014-07-16T09:26:36+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_mte.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: res C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\c772b3e6fd695f265b4f7bc5840d8a60.php 第 264 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2014-07-16T09:27:09+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_mte.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: res C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\c772b3e6fd695f265b4f7bc5840d8a60.php 第 264 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2014-07-16T09:29:03+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2014-07-16T09:29:05+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2014-07-16T09:29:06+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2014-07-16T09:29:18+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2014-07-16T09:29:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
