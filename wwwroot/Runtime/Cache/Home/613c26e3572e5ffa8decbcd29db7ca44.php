@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -214,27 +214,6 @@ $("#Mall_nav").mouseleave(function(){
             </div>
         
         
-    <style type="text/css">
-        .filterSep {
-            height:1px;
-            width:100%;
-            background:#CCCCCC;
-            overflow:hidden;
-            padding-bottom:1px; 
-            padding-top:1px; 
-            margin-bottom: 6px;
-            margin-top: 3px;
-        }
-        .sub_title_filter{
-            padding-bottom: 6px;
-            color:black;
-            font-weight:bold;
-            font-size: 75%;
-        }
-        .filterTable{
-            padding-bottom:5px; 
-        }
-    </style>
         <div class="col-md-10" style="background-color: white;">
        <nav class="navbar" role="navigation" style="background-color: white; margin-top:-8px;margin-left: -15px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -245,7 +224,7 @@ $("#Mall_nav").mouseleave(function(){
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身主页</a></li>
                 <li><a href="<?php echo U('Exercise/exc_filter');?>" id="filter_nav" >过滤器</a></li>
-                <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
+                <li><a href="<?php echo U('Exercise/exc_ind');?>" id="tml_nav">制定计划</a></li>
                 <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
                 <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
@@ -258,28 +237,30 @@ $("#Mall_nav").mouseleave(function(){
         ================================================== -->
         <h3> 过滤后的动作 </h3>
         <div id = "excInfo">
+           
         </div>
     </div>
-    <div id="finderRight" class="col-md-2" style="background-color: #E6E6FA">
-        <h5>
-            动作过滤器
-        </h5>
+    <div id="finderLeft" class="col-md-2">
+
+        <h4>
+            --动作过滤器--
+        </h4>
         <div class="filterSep"></div>
         <div id="Filters">
             <div id="muscleFilter">
                 <h4>
-                    <div class="sub_title_filter">肌群:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">肌群:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
                 <table class="filterTable" id="muscleFilterTable">
                     <tbody>
                     <?php if(is_array($_list)): $k = 0; $__LIST__ = $_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" type="checkbox" checked name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="mainmuscleid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="mainmuscleid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -287,9 +268,9 @@ $("#Mall_nav").mouseleave(function(){
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">锻炼类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">锻炼类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -297,11 +278,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list2)): $k = 0; $__LIST__ = $_list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" type="checkbox" checked name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="exercisetypeid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="exercisetypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -310,9 +291,9 @@ $("#Mall_nav").mouseleave(function(){
                     </tbody>
                 </table>
 
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">设备类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">设备类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -320,11 +301,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list3)): $k = 0; $__LIST__ = $_list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" type="checkbox" checked name="equiptypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="equiptypeid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" checked name="equiptypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -332,9 +313,9 @@ $("#Mall_nav").mouseleave(function(){
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">力量类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">力量类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -342,11 +323,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list4)): $k = 0; $__LIST__ = $_list4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" checked type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="forcetypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -355,9 +336,9 @@ $("#Mall_nav").mouseleave(function(){
                     </tbody>
                 </table>
 
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">运行类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">运行类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -365,11 +346,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list5)): $k = 0; $__LIST__ = $_list5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" checked type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="sporttypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -377,9 +358,9 @@ $("#Mall_nav").mouseleave(function(){
 
                     </tbody>
                 </table>
-                <div class="filterSep"></div>
+
                 <h4>
-                    <div class="sub_title_filter"">专家类型:&nbsp;&nbsp;
+                    <div style="padding-bottom: 0px">专家类型:&nbsp;&nbsp;
                         <a href="javascript: //" class="blueLink">全选</a>
                     </div>
                 </h4>
@@ -387,11 +368,11 @@ $("#Mall_nav").mouseleave(function(){
 
                     <tbody>
                     <?php if(is_array($_list6)): $k = 0; $__LIST__ = $_list6;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k; if($k % 2 == '1' ): ?><tr>
-                                <td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" checked/></td>
+                                <td><input class="ids" checked type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
                                 <td>
                                     <?php echo ($vo); ?>
                                 </td><?php endif; ?>
-                        <?php if($k % 2 == '0' ): ?><td><input class="ids" type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" checked/></td>
+                        <?php if($k % 2 == '0' ): ?><td><input class="ids" checked type="checkbox" name="leveltypeid" value="<?php echo ($k); ?>" /></td>
                             <td>
                                 <?php echo ($vo); ?>
                             </td>
@@ -402,7 +383,7 @@ $("#Mall_nav").mouseleave(function(){
             </div>
         </div>
     </div>
-
+    
     <script type="text/javascript" >
         $("document").ready(function() {
             $(".ids").click(function() {
@@ -444,10 +425,22 @@ $("#Mall_nav").mouseleave(function(){
                             
                             var exc = '<div class="col-md-12" style="border:2px;outline:#3399FF solid thick;">';
                             exc += '<div class="col-md-3"><image src="Public/Exercise/images/1.png" /><image src="Public/Exercise/images/2.png" /></div>';
-                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a> <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a></h5>";
+                          exc +='<div class="col-md-7"><h5>'+"<a href=<?php echo U("Exercise/exc_all",'','');?>/eid/"+data.info[i].eid+">" + data.info[i].ename+"</a>"+data.info[i].action+"</h5>";
                           exc +='<h6>目标肌群</h6><h6>'+data.info[i].mtname+'</h6>';
                            exc +='<h6>器械</h6><h6>'+data.info[i].eqtname+'</h6></div>';
                             exc +='</div>';
+         // <a href=javascript:; onclick=action(this); id="+data.info[i].eid+">添加为喜欢动作</a>
+                            $("#excInfo").append(exc);
+//                            $("#excInfo").append("<tr>");
+//                            $("#excInfo").append("<td><a href='<?php echo U("Exercise/exc_all");?>'>" + data.info[i].ename + "</a></td>");
+//                            $("#excInfo").append("<td>" + data.info[i].mtname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].etname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].eqtname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].ftname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].stname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].ltname + "</td>");
+//                            $("#excInfo").append("<td>" + data.info[i].sex + "</td>");
+//                            $("#excInfo").append("<tr>");
                         }
                         
                     }
@@ -464,8 +457,10 @@ $("#Mall_nav").mouseleave(function(){
         var id  = obj.id;
         var url = "<?php echo U('Exercise/addaction');?>";
         $.post(url,{id:id},function(data){
-            if(data){
+            if(data==1){
                $("#"+obj.id).hide(); 
+            }else{
+                alert('已经添加过了！');
             }
         })
     }
@@ -503,9 +498,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]

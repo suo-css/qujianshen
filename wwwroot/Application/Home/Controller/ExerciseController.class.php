@@ -17,7 +17,6 @@ class ExerciseController extends HomeController {
 
 	/* 用户中心首页 */
     public function exc_common(){
-
             $this->list     = $list      = M('goalmodule')->where(array('status'=>1))->select();
 
             $this->goaltype = $goaltype  = M('goalcontinuetype')->where(array('status'=>1))->select(); 
@@ -123,7 +122,7 @@ class ExerciseController extends HomeController {
                     ->field('exc.ename as ename, t1.name as mname, exc.sex, exc.rating')
                     ->select();*/
             
-             $prefix   = C('DB_PREFIX');
+            $prefix   = C('DB_PREFIX');
             $l_table  = $prefix.('exercise');
             $r_table1  = $prefix.('mainmuscletype');
             $r_table2  = $prefix.('exercisetype');
@@ -145,9 +144,11 @@ class ExerciseController extends HomeController {
                     ->select();
         
             $data["status"] = 0;
-            if(count($info) > 0)
-            {
+            if(count($info) > 0){
                 $data["status"] = 1;
+                foreach ($info as $k => $v) {
+                    $info[$k]['action'] = actiontype($v['eid']);
+                }
                 $data["info"] = $info;
             }
             $this->ajaxReturn($data, 'json');
@@ -215,13 +216,13 @@ class ExerciseController extends HomeController {
             $json[] = I('id');
             $data = array('actionid'=>json_encode($json));
             M('likeaction')->where(array('uid'=>is_login()))->save($data);
-            echo 1;
+            echo 1;     
         }else{
             $array = json_encode(array(I('id'))); 
             $data  = array('uid'=>is_login(),'actionid'=>$array);
             M('likeaction')->add($data);
             echo 1;
-        }
+        }  
     }
 
     public function exc_tml(){
@@ -236,6 +237,16 @@ class ExerciseController extends HomeController {
             $res[] = M('exercise')->where(array('eid'=>$value))->field('eid,ename')->find();
         }
         $this->res = $res;
+        $this->display();
+    }
+
+    public function exc_ind(){
+        $this->display();
+    }
+    public function exc_name(){
+        $this->display();
+    }
+    public function nav(){
         $this->display();
     }
 }

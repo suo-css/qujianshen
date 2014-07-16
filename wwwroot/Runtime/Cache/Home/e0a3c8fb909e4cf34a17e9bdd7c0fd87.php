@@ -134,109 +134,116 @@ $("#Mall_nav").mouseleave(function(){
         }
     </style>
     <div class="row" style="margin-top:-20px">
+         
         
-            <!-- 左侧 nav
-            ================================================== -->
-            <div class="col-md-2 bs-docs-sidebar" style="height:1200px; font-size:16px;color:darkslategrey;font-weight:800; padding-top: 0px;padding-right:0px;padding-bottom:0px;padding-left: 0px;">
+    <section>
+ <div class="col-md-8">
+     <div>
+          <p>
+            <h3 style="margin-top:30px;font-family:宋体；margin-left:5px;">如何制定你的计划</h3>
+          </p>
+     </div>
+         <hr color="#BABABA" width:100%; size:1px; noshade />
+ 
 
-                <div class="user_space">
-                    <div class="user_information" style="color:white;font-weight:800;background-color:darkslategrey padding-top: 3px;padding-right:3px;padding-bottom:3px;padding-left:3px;border-style: solid;" >
-                        <p>..........</p>
-                        <p>..........</p>
-                        <p>..........</p>
-                    </div>
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_1">
-                                <h4 class="panel-title"> 
-                                    <span class="glyphicon glyphicon-home"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        我的主页
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <a href="<?php echo U('User/login');?>">登陆</a>
-                                     <a href="<?php echo U('User/password');?>">修改</a>
-                                      <a href="<?php echo U('User/register');?>">注册</a>
-                                       <a href="<?php echo U('User/logout');?>">退出</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_2">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-calendar"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                        我的计划
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche ch 3 wolf moonente ea le, raw denim aestheabore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_3">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-user"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                        健身小组
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche atatquer farm-to-tablee sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_4">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-wrench"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                        设置
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        
-    <div class="col-md-9" style="">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
-            <?php $category=D('Category')->getChildrenId(1);$__LIST__ = D('Document')->page(!empty($_GET["p"])?$_GET["p"]:1,10)->lists($category, '`level` DESC,`id` DESC', 1,true); if(is_array($__LIST__)): $i = 0; $__LIST__ = $__LIST__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="">
-                    <h2>这是建设中的<strong>去健身啦.com</strong>的首页</h2>
-                </div>
-                    <div>
-                        <p class="lead"><?php echo ($article["description"]); ?></p>
-                    </div>
-                    <div>
-                        <span><a href="<?php echo U('Article/detail?id='.$article['id']);?>">查看全文</a></span>
-                        <span class="pull-right">
-                            <span class="author"><?php echo (get_username($article["uid"])); ?></span>
-                            <span>于 <?php echo (date('Y-m-d H:i',$article["create_time"])); ?></span> 发表在 <span>
-                            <a href="<?php echo U('Article/lists?category='.get_category_name($article['category_id']));?>"><?php echo (get_category_title($article["category_id"])); ?></a></span> ( 阅读：<?php echo ($article["view"]); ?> )
-                    </span>
-                </div>
-                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
+     <div>
+        <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+            <img style="float:left" src="" alt="tub" />
+                <h4 >确定你的目标</h4>
+                   <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone</p>
+      </div>
 
-        </section>
+     <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+          <img src="" alt="tu1" style="padding-left:10px";>
+     </div>
+  
+   
+ </div> 
+
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+          <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
     </div>
-        </div>
+  
+   
+ </div> 
+
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+               <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+               </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
+    </div>
+  
+   
+ </div> 
+
+<div>
+   
+   <div style="margin-bottom:40px;float:left; padding-right: 65px;">
+       <img style="float:left" src="" alt="tub" />
+           <h4 >确定你的目标</h4>
+              <p style="width:500px";height:100px;>Build your ultimate workout program. Does your program burn fat, build muscle, or support a different fitness goal? Choose your goal, name your program, describe how it works, select the difficulty level, and let the world know if it's designated for men, women, or everyone
+              </p>
+   </div>
+
+    <div style="float:left; width:180px; height:120px; border-left: 1px solid #BABABA;">
+     <img src="" alt="tu1" style="padding-left:10px";>
+    </div>
+  
+   
+   </div> 
+       <hr color="#ccc" width:100%; size:1px; noshade />
+   </div>
+
+</div>
+
+
+
+   
+
+
+
+<div>
+   <div style="width:374px;height:342px;border: 1px solid #BABABA;margin-right:30px;float:left;">
+         <div style="height:40px; width:372px; border-bottom:1px soild  #BABABA ; background-color:#ccc;">目标1</div>
+         <div style="width:372px; height:300px;">
+              <div style="width:352px; height:300px;float:left;">
+                aaaaaaaaaaaaaaa
+              </div>
+              <div style="width:20px; height:300px;background:#ccc;display:block;float:left;
+              border-top: 1px solid #BABABA;"></div>
+         </div>
+   </div>
+   <div style="width:374px;height:342px;border: 1px solid #BABABA;float:left;">
+         <div style="height:40px; width:372px; border-bottom:1px soild  #BABABA ; background-color:#ccc;">目标2</div>
+         <div style="width:372px; height:300px;">
+              <div style="width:352px; height:300px;float:left;"></div>
+              <div style="width:20px; height:300px;background:#ccc;display:block;float:left;
+              border-top: 1px solid #BABABA;"></div>
+         </div>
+   </div>
+</div>
+
+
+
+
+    </section>
+
 
          
 
@@ -278,6 +285,7 @@ $("#Mall_nav").mouseleave(function(){
 	}
 })();
 </script>
+
  <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
 <?php echo hook('pageFooter', 'widget');?>

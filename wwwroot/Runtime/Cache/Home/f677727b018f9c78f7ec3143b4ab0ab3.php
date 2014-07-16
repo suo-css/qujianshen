@@ -134,109 +134,74 @@ $("#Mall_nav").mouseleave(function(){
         }
     </style>
     <div class="row" style="margin-top:-20px">
+         
         
-            <!-- 左侧 nav
-            ================================================== -->
-            <div class="col-md-2 bs-docs-sidebar" style="height:1200px; font-size:16px;color:darkslategrey;font-weight:800; padding-top: 0px;padding-right:0px;padding-bottom:0px;padding-left: 0px;">
+    <style type="text/css">
+         .nav_s{width:623px; height:540px; }
+         .goal{width:620px; height:47px;}
+         .tus{width:620px;height:415px;}
+         .tu1{width:176px; height:187px;float:left;}
+         .tu2{width:137px; height:80px;float:left;}
+         .dengji{width:620px;height:470px;}
+         .dengjit{float:left;}
+    </style>
 
-                <div class="user_space">
-                    <div class="user_information" style="color:white;font-weight:800;background-color:darkslategrey padding-top: 3px;padding-right:3px;padding-bottom:3px;padding-left:3px;border-style: solid;" >
-                        <p>..........</p>
-                        <p>..........</p>
-                        <p>..........</p>
-                    </div>
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_1">
-                                <h4 class="panel-title"> 
-                                    <span class="glyphicon glyphicon-home"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        我的主页
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <a href="<?php echo U('User/login');?>">登陆</a>
-                                     <a href="<?php echo U('User/password');?>">修改</a>
-                                      <a href="<?php echo U('User/register');?>">注册</a>
-                                       <a href="<?php echo U('User/logout');?>">退出</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_2">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-calendar"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                        我的计划
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche ch 3 wolf moonente ea le, raw denim aestheabore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_3">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-user"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                        健身小组
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche atatquer farm-to-tablee sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="sidenav_panel_4">
-                                <h4 class="panel-title">
-                                    <span class="glyphicon glyphicon-wrench"></span> &nbsp
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                        设置
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        
-    <div class="col-md-9" style="">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
-            <?php $category=D('Category')->getChildrenId(1);$__LIST__ = D('Document')->page(!empty($_GET["p"])?$_GET["p"]:1,10)->lists($category, '`level` DESC,`id` DESC', 1,true); if(is_array($__LIST__)): $i = 0; $__LIST__ = $__LIST__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="">
-                    <h2>这是建设中的<strong>去健身啦.com</strong>的首页</h2>
-                </div>
-                    <div>
-                        <p class="lead"><?php echo ($article["description"]); ?></p>
-                    </div>
-                    <div>
-                        <span><a href="<?php echo U('Article/detail?id='.$article['id']);?>">查看全文</a></span>
-                        <span class="pull-right">
-                            <span class="author"><?php echo (get_username($article["uid"])); ?></span>
-                            <span>于 <?php echo (date('Y-m-d H:i',$article["create_time"])); ?></span> 发表在 <span>
-                            <a href="<?php echo U('Article/lists?category='.get_category_name($article['category_id']));?>"><?php echo (get_category_title($article["category_id"])); ?></a></span> ( 阅读：<?php echo ($article["view"]); ?> )
-                    </span>
-                </div>
-                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
+ <form role="form" style="margin-top:10px;">
 
-        </section>
+    <div class="form-group">
+      <label  for="exampleInputEmail1">项目名称</label>
+      <div >
+        <input type="PROGRAM NAME" class="form-control" id="exampleInputEmail1" placeholder="项目名称">
+      </div>
     </div>
-        </div>
+
+    <div class="form-group">
+       <label  for="exampleInputEmail1">规范（可选）</label>
+    </div>
+
+  <textarea class="form-control" rows="4"></textarea>
+
+</form>
+
+<div>
+  <div class="nav_s">
+    <div class="goal" style="margin-top:5px;"><h4><b>目标（选择一个）</b></h4></div>
+              <div class="tus">
+                <div class="tu1"><img src="" alt="tu1" /></div>
+                <div class="tu1"><img src="" alt="tu2" /></div>
+                <div class="tu1"><img src="" alt="tu3" /></div>
+              </div>
+              <div>
+                <div class="tu2"><img src="" alt="tu4" /></div>
+                <div class="tu2"><img src="" alt="tu5" /></div>
+                <div class="tu2"><img src="" alt="tu6" /></div>
+                <div class="tu2"><img src="" alt="tu7" /></div>
+              </div>
+   </div>
+</div>
+
+ <div class="dengji" style="width:600px;height:250px;">
+        <div style="width:100%;height:100px;"><h4 style="float:left;">难度级别（选择一个）</h4></div>
+        <div class="dengjit"><img src="tu8" /></div>
+        <div class="dengjit"><img src="tu9" /></div>
+        <div class="dengjit"><img src="tu10" /></div>
+        <div class="dengjit"><img src="tu11" /></div>
+ </div>
+
+<!--   <div >
+     男<input type="radio" name="sex" value="1" />
+     女<input type="radio" name="sex" value="0" />
+  </div>
+
+  <div>
+     <select name="age">
+        <option value="">儿童</option>
+        <option value="">青少年</option>
+        <option value="">壮年</option>
+        <option value="">老年</option>
+     </select>
+  </div> -->
+
 
          
 
@@ -278,6 +243,8 @@ $("#Mall_nav").mouseleave(function(){
 	}
 })();
 </script>
+
+ 
  <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
 <?php echo hook('pageFooter', 'widget');?>
