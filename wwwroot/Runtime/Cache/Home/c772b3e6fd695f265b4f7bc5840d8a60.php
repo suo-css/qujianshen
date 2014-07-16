@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -216,7 +216,7 @@ $("#Mall_nav").mouseleave(function(){
         
 
       
-            <div class="col-md-8" style="background-color:#FFF; height:1500px; ">
+            <div class="col-md-8" style="background-color:#FFF; height:150px; ">
                    <div  class="col-md-12" style=" height:330px; ">
                               <div  class="col-md-3" style="background-color:#FFF; height:160px;  border:0.3px; border-color:#D5D5D5; 
                                                                                         border-style:dashed none solid none;   border-radius: 20px; ">
@@ -246,20 +246,24 @@ $("#Mall_nav").mouseleave(function(){
                                        <div  class="col-md-12" style=" height:100px;  text-align:center;"></div>
                                        <div  class="col-md-12" style=" height:40px;  text-align:center;">aababcadftg</div>
                               </div>
-                               <div  id="week"  class="col-md-12" style="background-color:#FFF; height:350px; margin-top: 10px; padding: 0;">
-
-                                                                                        
+                               <div    id="week"  class="col-md-12" style="background-color:#FFF; height:350px; margin-top: 10px; padding: 0; ">
+                                                                                                                              
                                </div>
-
+                              <!--  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"   class="col-md-12"  style="background-color:#A7C0DC; height:50px; margin-top: 60px; padding: 0; " ></div>
+ -->
+                                                             
                    </div>
+
              </div>
-               
+                            
           
 
          
              <div class="col-md-2" >
                   <div class="col-md-2"  style=" border: 1px solid #BABABA; height:500px;  position:fixed;" >
-
+                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><!--  <?php echo ($vo["ename"]); ?> --><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <span  id="drag1" draggable="true" ondragstart="drag(event)">拖拽我把</span>
+                    
                  </div>
            </div>
   
@@ -291,9 +295,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/wwwroot", //当前网站地址
-		"APP"    : "/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
@@ -302,20 +306,61 @@ $("#Mall_nav").mouseleave(function(){
 </script>
 
  <script type="text/javascript">
+       var day=0;
      $(function() {
-          for (i = 0; i < 10; i++) {
+          for (i = 0; i < 20; i++) {
+            day=day+1;
+            if(day%8==0){
+                  day=1;
+            }
+
             $("#week")
                 .append(
-                    "<div  class='col-md-2'   style='height:200px; border: 1px solid  #BABABA; padding: 0;'>"
-                     + "<div  class='col-md-12'   style='height:70px; border: 1px solid  #BABABA; padding: 0; margin-top: 130px;'>" + "<div>"
+                    "<div    id='div1'  ondrop='drop(event)'  ondragover='allowDrop(event)'   class='col-md-2'   style='height:300px; border: 1px solid  #BABABA; padding: 0; width:102px;>"
+                     +"<div  style='text-align: right;'>"
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<div>"
+                     +"<div style='text-align: center; margin-top: 5px;'>"
+                     + "<span>"+"aaaa"+"</span>"
+                     +"<div style='text-align: center;'>"
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<div>"
+                     +"<div>"
+                     + "<div  class='col-md-12'   style='height:70px; border: 1px solid  #BABABA; padding: 0; margin-top: 163px; text-align: center;'>" 
+                     +"<div style='width:80px; height:25px; background-color:#004F7D; margin: 5px auto; color:#FFF;'>"
+
+                     +" 星期 "+day
                      + "<div>"
-                    
+                     +"<div style='width:80px; height:25px;  margin: 5px auto; color:#FFF'>"
+
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/up2.png' alt='copy copy ' >"
+                     + "<div>"
+                     + "<div>"
+                     + "<div>"
+                
                        
          );
                        
           }
     })
-         
+     
+
+ function allowDrop(ev)
+{
+ev.preventDefault();
+}
+ 
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+ 
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}    
 </script>
    <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->

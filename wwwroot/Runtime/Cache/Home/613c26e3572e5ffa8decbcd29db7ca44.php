@@ -224,7 +224,7 @@ $("#Mall_nav").mouseleave(function(){
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身主页</a></li>
                 <li><a href="<?php echo U('Exercise/exc_filter');?>" id="filter_nav" >过滤器</a></li>
-                <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
+                <li><a href="<?php echo U('Exercise/exc_ind');?>" id="tml_nav">制定计划</a></li>
                 <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
                 <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>

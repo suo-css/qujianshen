@@ -222,7 +222,8 @@ $("#Mall_nav").mouseleave(function(){
         #faqdiv .form{padding:10px;} 
     </style>
     <block name="exc_header">
-    <div class="col-md-10" style="background-color: white;">
+   
+            <div class="col-md-10" style="background-color: white;">
        <nav class="navbar" role="navigation" style="background-color: white; margin-top:-8px;margin-left: -15px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
         <!-- Brand and toggle get grouped for better mobile display -->
         
@@ -232,14 +233,15 @@ $("#Mall_nav").mouseleave(function(){
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身主页</a></li>
                 <li><a href="<?php echo U('Exercise/exc_filter');?>" id="filter_nav" >过滤器</a></li>
-                <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
+                <li><a href="<?php echo U('Exercise/exc_ind');?>" id="tml_nav">制定计划</a></li>
                 <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
                 <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
-        </nav>
+</nav>
     </div>
+  
     <?php if($tinue == ''): ?><form action="<?php echo U('');?>" method="post" onsubmit='return view();'>
             <?php if(is_array($goaltype)): $i = 0; $__LIST__ = $goaltype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo["name"]); ?>：<input type="text" class="value1" name="type[<?php echo ($vo["id"]); ?>]" value=""><?php echo ($vo["unit"]); endforeach; endif; else: echo "" ;endif; ?>
             
