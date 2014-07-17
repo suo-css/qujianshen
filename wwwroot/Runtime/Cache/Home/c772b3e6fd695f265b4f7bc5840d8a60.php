@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -34,45 +34,41 @@
 }
 
 </style>
-<nav class="navbar navbar-default " role="navigation" style="
-  background: #3399FF; 
-  background: -webkit-gradient(linear, left top, left bottom, from(#3399FF), to(#336699));
-  background: -moz-linear-gradient(top,  #faa51a,  #3399FF); 
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorStr='#e9e9e9', EndColorStr='#cccccc');padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
-    
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            
-            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color: #2a6496;background-color: #0aa;">去健身啦.com......</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 3px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
-            <ul class="nav navbar-nav">
-                <li><a href="<?php echo U('Index/Index');?>" id="Index_nav" style="margin-left:3px">主页</a></li>
-                <li><a href="<?php echo U('BodySpace/Index');?>" id="User_nav" >空间</a></li>
-                <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
-                <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
-                <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
-                <li><a href="#" id="Mall_nav">商城</a></li>
+<div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href=""><h1>Themeclue</h1></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="question1">QUESTION ME</a>
+              </li>
+              <li>
+                <a href="free-themes">FREE THEMES</a>
+              </li>
+              <li>
+                <a href="new-themes">NEW THEMES</a>
+              </li>
+              <li>
+                <a href="popular">POPULAR</a>
+              </li>
+              <li>
+                <a href="signin">SIGN IN</a>
+              </li>
+              <li>
+                <a href="signup">SIGN UP</a>
+              </li>
             </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="文章,計劃..">
-                </div>
-                <button type="submit" class="btn btn-default">搜索</button>
-            </form>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<div class="container-fluid">
-    <div class="row" style="margin-top:-28px">
-        <div class="col-md-12" style="background-color: white">
-            <p>&nbsp</p>
-        </div>
+          </div><!-- nav-collapse -->          
+        </div><!-- container -->
+      </div><!-- navbar-inner -->
     </div>
-</div>
 
 <script type="text/javascript">
     $("#Index_nav").mouseover(function(){
@@ -113,6 +109,8 @@ $("#Mall_nav").mouseleave(function(){
 });
     
 </script>
+
+
 
 	<!-- /头部 -->
 	
@@ -261,7 +259,7 @@ $("#Mall_nav").mouseleave(function(){
          
              <div class="col-md-2" >
                   <div class="col-md-2"  style=" border: 1px solid #BABABA; height:500px;  position:fixed;" >
-                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><!--  <?php echo ($vo["ename"]); ?> --><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo["ename"]); endforeach; endif; else: echo "" ;endif; ?>
                     <span  id="drag1" draggable="true" ondragstart="drag(event)">拖拽我把</span>
                     
                  </div>
@@ -295,9 +293,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
@@ -318,12 +316,12 @@ $("#Mall_nav").mouseleave(function(){
                 .append(
                     "<div    id='div1'  ondrop='drop(event)'  ondragover='allowDrop(event)'   class='col-md-2'   style='height:300px; border: 1px solid  #BABABA; padding: 0; width:102px;>"
                      +"<div  style='text-align: right;'>"
-                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
                      +"<div>"
                      +"<div style='text-align: center; margin-top: 5px;'>"
                      + "<span>"+"aaaa"+"</span>"
                      +"<div style='text-align: center;'>"
-                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/close.png'  width:20px; height:20px;>"
                      +"<div>"
                      +"<div>"
                      + "<div  class='col-md-12'   style='height:70px; border: 1px solid  #BABABA; padding: 0; margin-top: 163px; text-align: center;'>" 
@@ -333,7 +331,7 @@ $("#Mall_nav").mouseleave(function(){
                      + "<div>"
                      +"<div style='width:80px; height:25px;  margin: 5px auto; color:#FFF'>"
 
-                     +"<img src='/git/qujianshen/wwwroot/Public/Home/images/exc/up2.png' alt='copy copy ' >"
+                     +"<img src='/qujianshen/wwwroot/Public/Home/images/exc/up2.png' alt='copy copy ' >"
                      + "<div>"
                      + "<div>"
                      + "<div>"
