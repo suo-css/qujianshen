@@ -230,7 +230,7 @@ class ExerciseController extends HomeController {
     }
     
     public function exc_mte(){
-        $list = M('likeaction')->where(array('uid'=>is_login()))->find();
+        $list = M('likeaction')->where(array('uid'=>2))->find();
         $arr  = json_decode($list['actionid']);
         $res  = array();
         foreach ($arr as $k => $value) {

@@ -29,14 +29,21 @@
 <style type="text/css">
    .navbar-default{
     color: #383735;
-    background-color: #C9CBCA;
+    background: #ffffff;
+   background-image: -moz-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -webkit-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -o-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: linear-gradient(180deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
     font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
    }
    #Index_nav{
     margin-left: 80px;
    }
    #mid_nav{
-    margin-left: 30px;
+    margin-left: 240px;
+   }
+   .navbar-brand{
+
    }
 </style>
  <nav class="navbar navbar-default" role="navigation">
@@ -62,14 +69,10 @@
                 <li><a href="<?php echo U('near/Index');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-      </form>
       
-        <div class="nav-collapse navbar-right">
-                <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
+      
+        <div class="collapse navbar-collapse navbar-right">
+                <?php if(is_login()): ?><ul class="nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -93,54 +96,13 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<script type="text/javascript">
-//     $("#Index_nav").mouseover(function(){
-//   $("#Index_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Index_nav").mouseleave(function(){
-//   $("#Index_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#User_nav").mouseover(function(){
-//   $("#User_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#User_nav").mouseleave(function(){
-//   $("#User_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#Exercise_nav").mouseover(function(){
-//   $("#Exercise_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Exercise_nav").mouseleave(function(){
-//   $("#Exercise_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#Nutri_nav").mouseover(function(){
-//   $("#Nutri_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Nutri_nav").mouseleave(function(){
-//   $("#Nutri_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-// $("#Around_nav").mouseover(function(){
-//   $("#Around_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Around_nav").mouseleave(function(){
-//   $("#Around_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-// $("#Mall_nav").mouseover(function(){
-//   $("#Mall_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Mall_nav").mouseleave(function(){
-//   $("#Mall_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-    
-// </script>
+
 
 	<!-- /头部 -->
 	
 	<!-- 主体 -->
 	<div id="main-container" class="container">
     <style type="text/css">
-    body{
-        background-color: #EFEFEF;
-    }
         .glyphicon{
             color:darkslategrey;
             background-color: white;
@@ -227,7 +189,7 @@
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
+                                            <a href="<?php echo U('User/profiles');?>">个人信息</a>
                                 </div>
                             </div>
                         </div>

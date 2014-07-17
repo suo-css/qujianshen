@@ -43,7 +43,7 @@
     margin-left: 240px;
    }
    .navbar-brand{
-    
+
    }
 </style>
  <nav class="navbar navbar-default" role="navigation">
@@ -71,8 +71,8 @@
       </ul>
       
       
-        <div class="nav-collapse navbar-right">
-                <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
+        <div class="collapse navbar-collapse navbar-right">
+                <?php if(is_login()): ?><ul class="nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -103,9 +103,6 @@
 	<!-- 主体 -->
 	<div id="main-container" class="container">
     <style type="text/css">
-    body{
-        background-color: #EFEFEF;
-    }
         .glyphicon{
             color:darkslategrey;
             background-color: white;
@@ -192,7 +189,7 @@
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
+                                            <a href="<?php echo U('User/profiles');?>">个人信息</a>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +208,7 @@
     <block name="exc_header">
    
             
-    <div class="col-md-10" style="background-color: #EFEFEF;">
+    <div class="col-md-10" style="background-color: #F7F7F7;">
        <nav class="navbar" role="navigation" style="margin-top:0px;margin-left:0px; padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
         <a class="navbar-brand" href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身</a>
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -231,7 +228,7 @@
 
     <script type="text/javascript">
  $("#filter_nav").mouseover(function(){
-  $("#filter_nav").css({"border-bottom-style":"solid"," border-color":"#EB6001"});
+  $("#filter_nav").css({"border-bottom-style":"solid"," border-bottom-color":"#EB6001"});
 });
 $("#filter_nav").mouseleave(function(){
   $("#filter_nav").css({"border-bottom-style":""});

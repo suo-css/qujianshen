@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/2/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/2/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/2/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/2/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/2/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/2/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -53,8 +53,8 @@
                 <li><a href="<?php echo U('Index/Index');?>" id="Index_nav" style="margin-left:3px">主页</a></li>
                 <li><a href="<?php echo U('BodySpace/Index');?>" id="User_nav" >空间</a></li>
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
-                <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
-                <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
+                <li><a href="<?php echo U('nri/Index');?>" id="Nutri_nav">饮食</a></li>
+                <li><a href="<?php echo U('near/Index');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
@@ -139,7 +139,7 @@ $("#Mall_nav").mouseleave(function(){
 <section>
         <div class="row">
             <div class="col-md-4">
-                <form class="form-horizontal" action="/2/index.php?s=/Home/User/register.html" method="post" role="form">
+                <form class="form-horizontal" action="/git/qujianshen/wwwroot/index.php?s=/Home/User/register.html" method="post" role="form">
                     <div class="form-group">
                         <label class="col-md-3 control-label" for="inputEmail">用户名</label>
                         <div class="col-md-8">
@@ -190,6 +190,10 @@ $("#Mall_nav").mouseleave(function(){
     </section>
 
 
+         
+
+        
+
     </div>
 </div>
 
@@ -217,9 +221,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/2", //当前网站地址
-		"APP"    : "/2/index.php?s=", //当前项目地址
-		"PUBLIC" : "/2/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]

@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -225,7 +225,7 @@ $("#Mall_nav").mouseleave(function(){
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="exc_nav">健身主页</a></li>
                 <li><a href="<?php echo U('Exercise/exc_filter');?>" id="filter_nav" >过滤器</a></li>
                 <li><a href="<?php echo U('Exercise/exc_ind');?>" id="tml_nav">制定计划</a></li>
-                <li><a href="<?php echo U('Exercise/exc_doc');?>" id="doc_nav">文章</a></li>
+                <li><a href="<?php echo U('Exercise/exc_doc');?>" id="Nutri_nav">文章</a></li>
                 <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
             </ul>
@@ -300,18 +300,17 @@ $("#Mall_nav").mouseleave(function(){
      <img src="" alt="tu1" style="padding-left:10px";>
     </div>
   
-         <div style="float:right;margin-top:10px;margin-left:20px;"><a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a></div>
-   </div>  
-
-
-      
-   </div>
    
+   </div> 
+       <hr color="#ccc" width:100%; size:1px; noshade />
+   </div>
+
+</div>
+
+
+<a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
 
           
-        
-</div>
-   
 
          
 
@@ -344,9 +343,9 @@ $("#Mall_nav").mouseleave(function(){
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]

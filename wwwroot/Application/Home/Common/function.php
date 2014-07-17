@@ -171,3 +171,13 @@ function actiontype($id){
   }
 }
 
+
+/**
+ * 判断用户是否已经有了头像
+ */
+function avatars(){
+  $save_path = './Uploads/avatars/'.is_login();
+  if(is_dir($save_path)){
+    return "<img width=60 height=60 src=./Uploads/avatars/".is_login()."/".is_login().".jpg alt=>";
+  }
+}

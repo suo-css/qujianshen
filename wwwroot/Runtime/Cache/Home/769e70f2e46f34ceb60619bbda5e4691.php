@@ -29,7 +29,11 @@
 <style type="text/css">
    .navbar-default{
     color: #383735;
-    background-color: #C9CBCA;
+    background: #ffffff;
+   background-image: -moz-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -webkit-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -o-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: linear-gradient(180deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
     font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
    }
    #Index_nav{
@@ -37,6 +41,9 @@
    }
    #mid_nav{
     margin-left: 240px;
+   }
+   .navbar-brand{
+
    }
 </style>
  <nav class="navbar navbar-default" role="navigation">
@@ -64,8 +71,8 @@
       </ul>
       
       
-        <div class="nav-collapse navbar-right">
-                <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
+        <div class="collapse navbar-collapse navbar-right">
+                <?php if(is_login()): ?><ul class="nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -96,9 +103,6 @@
 	<!-- 主体 -->
 	<div id="main-container" class="container">
     <style type="text/css">
-    body{
-        background-color: #EFEFEF;
-    }
         .glyphicon{
             color:darkslategrey;
             background-color: white;
@@ -185,7 +189,7 @@
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
+                                            <a href="<?php echo U('User/profiles');?>">个人信息</a>
                                 </div>
                             </div>
                         </div>

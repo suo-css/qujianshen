@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/git/qujianshen/wwwroot/Public/home/css/base.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
+<script src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/html5shiv.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-1.10.2.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <!--<![endif]-->
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
@@ -27,106 +27,92 @@
 	<!-- 导航条
 ================================================== -->
 <style type="text/css">
-   #Index_nav{
-    margin-left: 80px;
-   }
-   #mid_nav{
-    margin-left: 30px;
-   }
+        #Nutri_nav,#Index_nav,#User_nav,#Exercise_nav,#Around_nav,#Mall_nav{
+    font-size:20px;
+    color:white;
+    font-weight:800;
+}
+
 </style>
- <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<nav class="navbar navbar-default " role="navigation" style="
+  background: #3399FF; 
+  background: -webkit-gradient(linear, left top, left bottom, from(#3399FF), to(#336699));
+  background: -moz-linear-gradient(top,  #faa51a,  #3399FF); 
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorStr='#e9e9e9', EndColorStr='#cccccc');padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+    
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            
+            <a class="navbar-brand" href="<?php echo U('Index/Index');?>" style="font-size:20px;font-weight:800;color: #2a6496;background-color: #0aa;">去健身啦.com......</a>
+        </div>
 
-      <a class="navbar-brand" href="<?php echo U('Index/Index');?>" id="Index_nav"><img src="/qujianshen/wwwroot/Public/Home/images/logo.png" class="image">去健身啦</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-middle" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" id="mid_nav">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 3px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+            <ul class="nav navbar-nav">
+                <li><a href="<?php echo U('Index/Index');?>" id="Index_nav" style="margin-left:3px">主页</a></li>
                 <li><a href="<?php echo U('BodySpace/Index');?>" id="User_nav" >空间</a></li>
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
                 <li><a href="<?php echo U('nri/Index');?>" id="Nutri_nav">饮食</a></li>
                 <li><a href="<?php echo U('near/Index');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-      </form>
-      
-        <div class="nav-collapse navbar-right">
-                <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo U('User/profile');?>">修改密码</a>
-                                <li><a href="<?php echo U('User/logout');?>">退出</a>
-                            </ul>
-                      
-                    </ul>
-                <?php else: ?>
-                    <ul class="nav" style="margin-right:0">
-                        <li>
-                            <a href="<?php echo U('User/login');?>">登录</a>
-                        
-                        <li>
-                            <a href="<?php echo U('User/register');?>" style="padding-left:0;padding-right:0">注册</a>
-                        
-                    </ul><?php endif; ?>
-            </div>
-       
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="文章,計劃..">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
+<div class="container-fluid">
+    <div class="row" style="margin-top:-28px">
+        <div class="col-md-12" style="background-color: white">
+            <p>&nbsp</p>
+        </div>
+    </div>
+</div>
 
-// <script type="text/javascript">
-//     $("#Index_nav").mouseover(function(){
-//   $("#Index_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Index_nav").mouseleave(function(){
-//   $("#Index_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#User_nav").mouseover(function(){
-//   $("#User_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#User_nav").mouseleave(function(){
-//   $("#User_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#Exercise_nav").mouseover(function(){
-//   $("#Exercise_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Exercise_nav").mouseleave(function(){
-//   $("#Exercise_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-//  $("#Nutri_nav").mouseover(function(){
-//   $("#Nutri_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Nutri_nav").mouseleave(function(){
-//   $("#Nutri_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-// $("#Around_nav").mouseover(function(){
-//   $("#Around_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Around_nav").mouseleave(function(){
-//   $("#Around_nav").css({"background-color":"#3399FF","color":"white"});
-// });
-// $("#Mall_nav").mouseover(function(){
-//   $("#Mall_nav").css({"background-color":"white","color":"#3399FF"});
-// });
-// $("#Mall_nav").mouseleave(function(){
-//   $("#Mall_nav").css({"background-color":"#3399FF","color":"white"});
-// });
+<script type="text/javascript">
+    $("#Index_nav").mouseover(function(){
+  $("#Index_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#Index_nav").mouseleave(function(){
+  $("#Index_nav").css({"background-color":"#3399FF","color":"white"});
+});
+ $("#User_nav").mouseover(function(){
+  $("#User_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#User_nav").mouseleave(function(){
+  $("#User_nav").css({"background-color":"#3399FF","color":"white"});
+});
+ $("#Exercise_nav").mouseover(function(){
+  $("#Exercise_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#Exercise_nav").mouseleave(function(){
+  $("#Exercise_nav").css({"background-color":"#3399FF","color":"white"});
+});
+ $("#Nutri_nav").mouseover(function(){
+  $("#Nutri_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#Nutri_nav").mouseleave(function(){
+  $("#Nutri_nav").css({"background-color":"#3399FF","color":"white"});
+});
+$("#Around_nav").mouseover(function(){
+  $("#Around_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#Around_nav").mouseleave(function(){
+  $("#Around_nav").css({"background-color":"#3399FF","color":"white"});
+});
+$("#Mall_nav").mouseover(function(){
+  $("#Mall_nav").css({"background-color":"white","color":"#3399FF"});
+});
+$("#Mall_nav").mouseleave(function(){
+  $("#Mall_nav").css({"background-color":"#3399FF","color":"white"});
+});
     
-// </script>
+</script>
 
 	<!-- /头部 -->
 	
@@ -150,11 +136,12 @@
     <div class="row" style="margin-top:-20px">
          
         
-        <script type="text/javascript" src="/qujianshen/wwwroot/Public/static/uploadify/jquery.uploadify.min.js"></script>
     <section>
         <div class="row">
             <div class="col-md-4">
                 <form class="form-horizontal" action="<?php echo U();?>" method="post" >
+                    
+                    <div id="img_save"><?php echo avatars();?></div>
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="nickname">昵称</label>
                         <div class="col-md-8">
@@ -218,7 +205,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="telephone">生日</label>
                         <div class="col-md-8">
-                            <input type="text" name="birthday"  value="<?php echo ($result["birthday"]); ?>"  class="form-control" placeholder="请输入生日">
+                            <input type="text" id="time-start" name="birthday"  value="<?php echo ($result["birthday"]); ?>"  class="form-control" onkeyup="$(this).val('')" placeholder="请输入生日">
                         </div>
                         
                     <div>
@@ -232,53 +219,33 @@
                     </div>
                     <div class="controls Validform_checktip text-warning"></div>
                     <input type="hidden" name=id value="<?php echo ($result["id"]); ?>">
-
-                    <div class="form-group">
-                        <input type="file" id="upload_picture_cover_id">
-                        <input type="hidden"  name="cover_id"  id="cover_id_cover_id"/>
-                        <input type="hidden" name="iconurl" value="<?php echo ($result["iconurl"]); ?>" id="imgurl">
-                        <div class="upload-img-box">
-                            <img src=".<?php echo ($result["iconurl"]); ?>?<?php time()?>" alt="" width="120" height="90">
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                    //上传图片
-                    /* 初始化上传插件 */
-                    $("#upload_picture_cover_id").uploadify({
-                        "height"          : 30,
-                        "swf"             : "/qujianshen/wwwroot/Public/static/uploadify/uploadify.swf",
-                        "fileObjName"     : "download",
-                        "buttonText"      : "修改头像",
-                        "uploader"        : "<?php echo U('User/uploadPicture',array('session_id'=>session_id()));?>",
-                        "width"           : 120,
-                        'removeTimeout'   : 1,
-                        'fileTypeExts'    : '*.jpg; *.png; *.gif;',
-                        "onUploadSuccess" : uploadPicturecover_id,
-                        'onFallback' : function() {
-                            alert('未检测到兼容版本的Flash.');
-                        }
-                    });
-                    function uploadPicturecover_id(file, data){
-                        var data = $.parseJSON(data);
-                        var src = '';
-                        if(data.status){
-                            $("#cover_id_cover_id").val(data.id);
-                            src = data.url || '/qujianshen/wwwroot' + data.path
-                            $("#cover_id_cover_id").parent().find('.upload-img-box').html(
-                                '<div class="upload-pre-item"><img src="' + src + '"/></div>'
-                            );
-                            $("#imgurl").val(src);
-                        } else {
-                            updateAlert(data.info);
-                            setTimeout(function(){
-                                $('#top-alert').find('button').click();
-                                $(that).removeClass('disabled').prop('disabled',false);
-                            },1500);
-                        }
-                    }
-                    </script> 
                 </form>
             </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          上传头像
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">上传头像</h4>
+              </div>
+              <div class="modal-body">
+                  <div id="altContent"  ><!-- 上传图片容器 -->
+                        
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
@@ -313,9 +280,9 @@
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
-		"ROOT"   : "/qujianshen/wwwroot", //当前网站地址
-		"APP"    : "/qujianshen/wwwroot/index.php?s=", //当前项目地址
-		"PUBLIC" : "/qujianshen/wwwroot/Public", //项目公共目录地址
+		"ROOT"   : "/git/qujianshen/wwwroot", //当前网站地址
+		"APP"    : "/git/qujianshen/wwwroot/index.php?s=", //当前项目地址
+		"PUBLIC" : "/git/qujianshen/wwwroot/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
 		"VAR"    : ["<?php echo C('VAR_MODULE');?>", "<?php echo C('VAR_CONTROLLER');?>", "<?php echo C('VAR_ACTION');?>"]
@@ -323,7 +290,29 @@
 })();
 </script>
 
+<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<?php if(C('COLOR_STYLE')=='blue_color') echo '<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">'; ?>
+<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+    <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
+
     <script type="text/javascript">
+        window.onload=function(){
+            xiuxiu.embedSWF("altContent",5,"850","560");
+               /*第1个参数是加载编辑器div容器，第2个参数是编辑器类型，第3个参数是div容器宽，第4个参数是div容器高*/
+            var url = "<?php echo U('user/upload');?>";
+            xiuxiu.setUploadURL("http://127.0.0.1/"+url);//修改为您自己的上传接收图片程序 
+            xiuxiu.onUploadResponse = function (data)
+            {
+                if(data==1){
+                  $("#img_save").html("<img width=60 height=60 src=./Uploads/avatars/<?php echo ($result["uid"]); ?>/<?php echo ($result["uid"]); ?>.jpg?<?php echo rand(100,999); ?> alt=>");
+                }else{
+                    alert('服务器繁忙！');
+                }
+            }
+        }
         $(document)
                 .ajaxStart(function() {
                     $("button:submit").addClass("log-in").attr("disabled", true);
@@ -344,6 +333,13 @@
                 }
             }
         });
+    $('#time-start').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+
 
     </script>
  <!-- 用于加载js代码 -->

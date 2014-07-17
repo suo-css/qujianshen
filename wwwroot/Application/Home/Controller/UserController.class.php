@@ -166,45 +166,6 @@ class UserController extends HomeController {
     }
 
     /**
-     * 个人用户信息
-     * @author huajie <banhuajie@163.com>
-     */
-    public function profile(){
-		if ( !is_login() ) {
-			$this->error( '您还没有登陆',U('User/login') );
-		}
-        if (IS_POST) {
-        	$personal = D('personal');
-            $data    = $personal->create();
-      		$personal->uid = is_login();
-            if($data){
-            	if($personal->iconurl!=""){
-            		$PR = strrchr($personal->iconurl,"."); //图片后缀名
-		      		$path="./Uploads/User/".is_login();
-					if (!file_exists($path)){    //如果文件夹不存在
-					   mkdir($path, 0777);
-					}
-		            rename($_SERVER['DOCUMENT_ROOT'].$personal->iconurl,"./Uploads/User/".$personal->uid."/".$personal->uid.$PR);            
-		            $personal->iconurl = "/Uploads/User/".$personal->uid."/".$personal->uid.$PR;
-            	}
-                if($personal->add()){
-                   $this->success('保存成功!',U('Index/index'));
-                } else {
-                   $this->error('保存失败!');
-                }
-            } else {
-                $this->error($personal->getError());
-            }
-        }else{
-        	$result = M('personal')->where(array('uid'=>is_login()))->find();
-        	if($result){
-        		$this->redirect('profiles');
-        	}
-            $this->display();
-        }
-    }
-
-    /**
      * 个人用户信息更新
      * @author huajie <banhuajie@163.com>
      */
@@ -217,59 +178,37 @@ class UserController extends HomeController {
             $data     	   = $personal->create();
       		$personal->uid = is_login();
             if($data){
-            	if($personal->iconurl!=""){
-            		$PR = strrchr($personal->iconurl,"."); //图片后缀名
-		      		$path="./Uploads/User/".is_login();
-					if (!file_exists($path)){    //如果文件夹不存在
-					   mkdir($path, 0777);
-					}
-		            rename($_SERVER['DOCUMENT_ROOT'].$personal->iconurl,"./Uploads/User/".$personal->uid."/".$personal->uid.$PR);            
-		            $personal->iconurl = "/Uploads/User/".$personal->uid."/".$personal->uid.$PR;
-            	}
                	$personal->save();
-                $this->success('保存成功!',U('Index/index'));
-                 
+                $this->success('保存成功!',U('Index/index'));                 
             } else {
                 $this->error($personal->getError());
             }
         }else{
+        	if(!M('personal')->where(array('uid'=>is_login()))->find()){$data=array('uid'=>is_login(),'birthday'=>'');M('personal')->add($data);}
         	$result = M('personal')->where(array('uid'=>is_login()))->find();
         	$this->result = $result;
             $this->display();
         }
     }
 
-    /**
-     * 上传图片
-     * @author huajie <banhuajie@163.com>
-     */
-    public function uploadPicture(){
-        //TODO: 用户登录检测
-        /* 返回标准数据 */
-        $return  = array('status' => 1, 'info' => '上传成功', 'data' => '');
-        /* 调用文件上传组件上传文件 */
-        $Picture = D('Picture');
-
-        $pic_driver = C('PICTURE_UPLOAD_DRIVER');
-        $info = $Picture->upload_img(
-            $_FILES,
-            C('PICTURE_UPLOAD_IMG'),
-            C('PICTURE_UPLOAD_DRIVER'),
-            C("UPLOAD_{$pic_driver}_CONFIG")
-        ); //TODO:上传到远程服务器
-
-
-        /* 记录图片信息 */
-        if($info){
-            $return['status'] = 1;
-            $return = array_merge($info['download'], $return);
-        } else {
-            $return['status'] = 0;
-            $return['info']   = $Picture->getError();
-        }
-        $return['info'] = $info['download'];
-        /* 返回JSON数据 */
-        $this->ajaxReturn($return);
-    }
-
+    public function upload(){
+    	$post_input = 'php://input';
+		$save_path = './Uploads/avatars/'.is_login();  //定义一个要上传头像的目录
+		is_dir($save_path) || mkdir($save_path);
+		$postdata = file_get_contents( $post_input );
+		if ( isset( $postdata ) && strlen( $postdata ) > 0 ) {
+			$filename = $save_path . '/' . is_login() . '.jpg';
+			$handle = fopen( $filename, 'w+' );
+			fwrite( $handle, $postdata );
+			fclose( $handle );
+			if ( is_file( $filename ) ) {
+				echo 1;
+				exit ();
+			}else {
+				die ( '上传失败' );
+			}
+		}else {
+			die ( '没有图片信息!' );
+		}
+	}	
 }

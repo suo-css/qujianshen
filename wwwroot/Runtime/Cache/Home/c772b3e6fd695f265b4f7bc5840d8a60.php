@@ -27,88 +27,74 @@
 	<!-- 导航条
 ================================================== -->
 <style type="text/css">
-        #Nutri_nav,#Index_nav,#User_nav,#Exercise_nav,#Around_nav,#Mall_nav{
-    font-size:20px;
-    color:white;
-    font-weight:800;
-}
+   .navbar-default{
+    color: #383735;
+    background: #ffffff;
+   background-image: -moz-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -webkit-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: -o-linear-gradient(270deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+   background-image: linear-gradient(180deg, #ffffff 0%, rgba(201, 203, 202, 0.870588) 95%);
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+   }
+   #Index_nav{
+    margin-left: 80px;
+   }
+   #mid_nav{
+    margin-left: 240px;
+   }
+   .navbar-brand{
 
+   }
 </style>
+ <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-<div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href=""><h1>Themeclue</h1></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li>
-                <a href="question1">QUESTION ME</a>
-              </li>
-              <li>
-                <a href="free-themes">FREE THEMES</a>
-              </li>
-              <li>
-                <a href="new-themes">NEW THEMES</a>
-              </li>
-              <li>
-                <a href="popular">POPULAR</a>
-              </li>
-              <li>
-                <a href="signin">SIGN IN</a>
-              </li>
-              <li>
-                <a href="signup">SIGN UP</a>
-              </li>
-            </ul>
-          </div><!-- nav-collapse -->          
-        </div><!-- container -->
-      </div><!-- navbar-inner -->
+      <a class="navbar-brand" href="<?php echo U('Index/Index');?>" id="Index_nav"><img src="/qujianshen/wwwroot/Public/Home/images/logo.png" class="image">去健身啦</a>
     </div>
 
-<script type="text/javascript">
-    $("#Index_nav").mouseover(function(){
-  $("#Index_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#Index_nav").mouseleave(function(){
-  $("#Index_nav").css({"background-color":"#3399FF","color":"white"});
-});
- $("#User_nav").mouseover(function(){
-  $("#User_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#User_nav").mouseleave(function(){
-  $("#User_nav").css({"background-color":"#3399FF","color":"white"});
-});
- $("#Exercise_nav").mouseover(function(){
-  $("#Exercise_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#Exercise_nav").mouseleave(function(){
-  $("#Exercise_nav").css({"background-color":"#3399FF","color":"white"});
-});
- $("#Nutri_nav").mouseover(function(){
-  $("#Nutri_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#Nutri_nav").mouseleave(function(){
-  $("#Nutri_nav").css({"background-color":"#3399FF","color":"white"});
-});
-$("#Around_nav").mouseover(function(){
-  $("#Around_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#Around_nav").mouseleave(function(){
-  $("#Around_nav").css({"background-color":"#3399FF","color":"white"});
-});
-$("#Mall_nav").mouseover(function(){
-  $("#Mall_nav").css({"background-color":"white","color":"#3399FF"});
-});
-$("#Mall_nav").mouseleave(function(){
-  $("#Mall_nav").css({"background-color":"#3399FF","color":"white"});
-});
-    
-</script>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-middle" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="mid_nav">
+                <li><a href="<?php echo U('BodySpace/Index');?>" id="User_nav" >空间</a></li>
+                <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
+                <li><a href="<?php echo U('nri/Index');?>" id="Nutri_nav">饮食</a></li>
+                <li><a href="<?php echo U('near/Index');?>" id="Around_nav">周边</a></li>
+                <li><a href="#" id="Mall_nav">商城</a></li>
+      </ul>
+      
+      
+        <div class="collapse navbar-collapse navbar-right">
+                <?php if(is_login()): ?><ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo U('User/profile');?>">修改密码</a>
+                                <li><a href="<?php echo U('User/logout');?>">退出</a>
+                            </ul>
+                      
+                    </ul>
+                <?php else: ?>
+                    <ul class="nav" style="margin-right:0">
+                        <li>
+                            <a href="<?php echo U('User/login');?>">登录</a>
+                        
+                        <li>
+                            <a href="<?php echo U('User/register');?>" style="padding-left:0;padding-right:0">注册</a>
+                        
+                    </ul><?php endif; ?>
+            </div>
+       
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 
@@ -203,7 +189,7 @@ $("#Mall_nav").mouseleave(function(){
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                            <a href="<?php echo U('User/profile');?>">个人信息</a>
+                                            <a href="<?php echo U('User/profiles');?>">个人信息</a>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +245,7 @@ $("#Mall_nav").mouseleave(function(){
          
              <div class="col-md-2" >
                   <div class="col-md-2"  style=" border: 1px solid #BABABA; height:500px;  position:fixed;" >
-                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo["ename"]); endforeach; endif; else: echo "" ;endif; ?>
+                    <?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><!--  <?php echo ($vo["ename"]); ?> --><?php endforeach; endif; else: echo "" ;endif; ?>
                     <span  id="drag1" draggable="true" ondragstart="drag(event)">拖拽我把</span>
                     
                  </div>

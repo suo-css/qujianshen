@@ -338,11 +338,7 @@
         }();
     </script>
     
-<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
-<?php if(C('COLOR_STYLE')=='blue_color') echo '<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">'; ?>
-<link href="/git/qujianshen/wwwroot/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="/git/qujianshen/wwwroot/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
 <script type="text/javascript">
 $(function(){
 	//搜索功能

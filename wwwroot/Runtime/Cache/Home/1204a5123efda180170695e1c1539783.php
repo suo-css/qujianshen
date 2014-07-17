@@ -53,8 +53,8 @@
                 <li><a href="<?php echo U('Index/Index');?>" id="Index_nav" style="margin-left:3px">主页</a></li>
                 <li><a href="<?php echo U('BodySpace/Index');?>" id="User_nav" >空间</a></li>
                 <li><a href="<?php echo U('Exercise/exc_common');?>" id="Exercise_nav">健身</a></li>
-                <li><a href="<?php echo U('nri/Index');?>" id="Nutri_nav">饮食</a></li>
-                <li><a href="<?php echo U('near/Index');?>" id="Around_nav">周边</a></li>
+                <li><a href="<?php echo U('Index/Index');?>" id="Nutri_nav">饮食</a></li>
+                <li><a href="<?php echo U('User/login');?>" id="Around_nav">周边</a></li>
                 <li><a href="#" id="Mall_nav">商城</a></li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
@@ -311,9 +311,9 @@ $("#Mall_nav").mouseleave(function(){
 
      </div>
      
-      <div style="float:right;margin-top:10px;"><a href="<?php echo U('Exercise/exc_mte');?>" class="btn btn-primary btn-lg active" role="button" ;>下一步</a></div>
+      
 </div>
-
+<a href="<?php echo U('Exercise/exc_mte');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
 
          
              <div class="col-md-2" >
