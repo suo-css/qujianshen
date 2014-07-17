@@ -1,0 +1,1363 @@
+[ 2014-07-17T08:45:51+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_name.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2014-07-17T08:46:11+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.056590s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.016967s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.001017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000638s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 470 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.069587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002097s ]
+
+[ 2014-07-17T08:49:32+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006240s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000404s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 377 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2014-07-17T08:49:36+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006037s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 377 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2014-07-17T08:50:28+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006086s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 470 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2014-07-17T08:53:59+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006265s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2014-07-17T08:55:08+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006172s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000493s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001810s ]
+
+[ 2014-07-17T08:55:18+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006409s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001896s ]
+
+[ 2014-07-17T08:55:34+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006283s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001800s ]
+
+[ 2014-07-17T08:56:42+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005942s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000442s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2014-07-17T08:56:59+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006300s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2014-07-17T08:57:44+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006301s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2014-07-17T08:58:17+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006249s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2014-07-17T08:59:48+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006260s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2014-07-17T09:00:33+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006405s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2014-07-17T09:00:52+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006947s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2014-07-17T09:02:05+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006060s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001804s ]
+
+[ 2014-07-17T09:04:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006355s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2014-07-17T09:05:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006249s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001817s ]
+
+[ 2014-07-17T09:07:11+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006535s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000644s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2014-07-17T09:07:59+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005973s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2014-07-17T09:09:25+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006286s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
+
+[ 2014-07-17T09:09:56+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006046s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000488s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000433s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2014-07-17T09:10:50+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006352s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2014-07-17T09:13:09+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006593s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001830s ]
+
+[ 2014-07-17T09:13:15+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006278s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2014-07-17T09:14:01+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006120s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2014-07-17T09:15:05+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006453s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000491s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2014-07-17T09:15:06+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005987s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 471 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001838s ]
+
+[ 2014-07-17T09:21:34+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006933s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 463 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2014-07-17T09:21:52+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006093s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000521s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 463 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2014-07-17T09:28:44+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006453s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000448s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2014-07-17T09:30:41+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006508s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000559s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000451s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2014-07-17T09:31:15+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006417s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001831s ]
+
+[ 2014-07-17T09:31:45+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006290s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001820s ]
+
+[ 2014-07-17T09:32:47+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005987s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000447s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001810s ]
+
+[ 2014-07-17T09:32:49+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006207s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000451s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001822s ]
+
+[ 2014-07-17T09:33:37+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006079s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2014-07-17T09:35:02+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006384s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000443s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 476 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001837s ]
+
+[ 2014-07-17T09:49:11+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.007025s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000559s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000445s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 478 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001945s ]
+
+[ 2014-07-17T09:49:41+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006338s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 478 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2014-07-17T09:51:28+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006359s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 478 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2014-07-17T09:58:56+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006107s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 482 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2014-07-17T09:59:27+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006063s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000452s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 482 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001974s ]
+
+[ 2014-07-17T10:02:21+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006222s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000451s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000669s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 481 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2014-07-17T10:02:41+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006298s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 481 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002038s ]
+
+[ 2014-07-17T10:05:00+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006687s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000528s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000449s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 481 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2014-07-17T10:06:33+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006339s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000587s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 481 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001880s ]
+
+[ 2014-07-17T10:08:25+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006108s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000528s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 481 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002090s ]
+
+[ 2014-07-17T10:09:05+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006281s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 514 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001838s ]
+
+[ 2014-07-17T10:10:59+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006325s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000528s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000753s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 514 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001874s ]
+
+[ 2014-07-17T10:19:37+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006649s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2014-07-17T10:22:58+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006309s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2014-07-17T10:24:54+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006176s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2014-07-17T10:24:56+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006203s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2014-07-17T10:25:38+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006016s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000518s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001837s ]
+
+[ 2014-07-17T10:26:16+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005912s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000509s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 519 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001907s ]
+
+[ 2014-07-17T10:27:36+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006274s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000498s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 524 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001821s ]
+
+[ 2014-07-17T10:27:39+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006202s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000488s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000504s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 524 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2014-07-17T10:29:37+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006118s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 525 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001822s ]
+
+[ 2014-07-17T10:29:39+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006185s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 525 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2014-07-17T10:30:01+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005952s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2014-07-17T10:33:36+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006224s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000502s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001810s ]
+
+[ 2014-07-17T10:35:25+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006548s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2014-07-17T10:36:19+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006197s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2014-07-17T10:37:17+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006517s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000489s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000507s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001872s ]
+
+[ 2014-07-17T10:39:23+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006307s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000509s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2014-07-17T10:40:22+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006282s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000742s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2014-07-17T13:06:29+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006453s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000519s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000743s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2014-07-17T13:07:20+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.005910s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000617s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2014-07-17T13:07:35+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006314s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000526s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2014-07-17T13:08:47+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_all.html
+SQL: SHOW COLUMNS FROM `onethink_exercisecomment` [ RunTime:0.006296s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 158 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SELECT * FROM `onethink_exercisecomment` WHERE ( `eid` = null ) LIMIT 0,10   [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000516s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000743s ]
+NOTIC: [8] Undefined index: eid C:\wamp\www\qujianshen\wwwroot\Runtime\Cache\Home\a6277c895493356df66bfb822ff4c638.php 第 521 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+

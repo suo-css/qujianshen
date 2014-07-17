@@ -234,11 +234,11 @@ $("#Mall_nav").mouseleave(function(){
     </div>
     
     
-
-        <div class="col-md-5" id="video_con">
-video
-        </div>
-        <div class="col-md-5" id="describe_con";>
+<div class="col-md-10" id="video_con"> 
+      <div class="col-md-6" id="video_con">
+   video
+     </div>
+        <div class="col-md-6" id="describe_con";>
            <p>Bodyweight Squat </p>
            <p>Also Known As: prisoner squat, air squat </p>
 
@@ -264,12 +264,12 @@ video
         
           </div>
    
-    <div style="text-align:center";>
+    <div class="col-md-12";>
         <div class="nav_s">
-            <div style="margin-top:5px;">
-                <h4 style="float:left;margin-left:230px;">Bodyweight Squat Images</h4>
+            <div class="col-md-12";style="margin-bottom:20px;">
+                <h4 style="padding-top:30px;">Bodyweight Squat Images</h4>
             </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12" style="margin-top:20px;">
                         <div class="col-md-6"><img src="" alt="tu1" /></div>
                         <div class="col-md-6"><img src="" alt="tu2" /></div>
                   </div>
@@ -277,14 +277,14 @@ video
     </div>
 
 
-  <div >
+  <div class="col-md-12";>
         <div class="nav_s" >
-            <div >
-                <h4 style="float:left;margin-left:230px;">Bodyweight Squat Guide</h4>
+            <div class="col-md-12";>
+                <h4 style="padding-top:30px;">Bodyweight Squat Guide</h4>
             </div>
-                  <div class="col-md-12">
-                        <div class="col-md-3" style="float:left;margin-left:230px;"><img src="" alt="tu1" /></div>
-                        <div class="col-md-7" style="float:left;margin-left:230px;">
+                  <div class="col-md-12" style="margin-top:20px;">
+                        <div class="col-md-4"><img src="/qujianshen/wwwroot/Public/Home/images/jirou.jpg" alt="tu1" /></div>
+                        <div class="col-md-8">
                             <p>1.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
                              </p>
                             <p>2.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
@@ -297,14 +297,14 @@ video
     </div>  
 
 
-   <div ;>
+   <div  class="col-md-12";style="margin-top:20px;">
         <div class="nav_s">
-            <div style="margin-top:5px;">
-                <h4 style="float:left;margin-left:230px;">Alternative Exercises For Bodyweight Squat</h4>
+            <div class="col-md-12";>
+                <h4 style="padding-top:30px;">Alternative Exercises For Bodyweight Squat</h4>
             </div>
-                  <div class="col-md-12">
-                        <div class="col-md-7"style="float:left;margin-left:230px;">No alternative exercises found. Know of one? Tell us in the tips section below.</div>
-                        <div class="col-md-5"style="float:left;margin-left:230px;">
+                  <div class="col-md-12" style="margin-top:20px;">
+                        <div class="col-md-7">No alternative exercises found. Know of one? Tell us in the tips section below.</div>
+                        <div class="col-md-5">
                              <p>1.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
                              </p>
                             <p>2.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
@@ -319,21 +319,72 @@ video
 
 
 
-    <div style="border:1px soild #ccc;">
-        <div >
-             <div></div>
-             <div></div>
+   <div  class="col-md-12";style="margin-top:20px;">
+        <div class="nav_s">
+                 <div class="col-md-12";><h4 >Tips and Reviews - Login to rate</h4></div>
+                
+                  <div class="col-md-12" >
+                        <div class="col-md-12"style="background-color:#ccc; height:50px;  border: 1px solid #BABABA;line-heioght:50px;margin-bottom:30px;padding-top:15px;margin-top:10px;">Login to rate, review, or leave a tip for this exercise</div>
+                        <div  class="col-md-12" style="border:1px solid #ccc;height:auto;">
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
 
-        </div>
-       
-      
-     </div>
+
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
 
 
 
- </div>
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
 
-          
+
+
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
+
+
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
+
+
+
+                              <div  class="col-md-12" style="border-bottom:1px solid #ccc;height:150px;padding-top:30px;">
+                                    <div class="col-md-10"><h5>TIP:REVERSE flyes</h5><p style="padding-top:10px;">Mar 2, 2014 4:38 AM: Why not try push ups hands shoulder width apart habds turned in fingers facing in</p></div>
+                                    <div class="col-md-2"><p>A:xxxxxxxxxx</p>B:xxxxxxxxxx<p></p>B:xxxxxxxxxx<p></p>C:xxxxxxxxxx</div>
+                              </div>
+                              
+                        </div> 
+
+                  </div>
+         </div>
+    </div>
+
+
+
+
+
+</div>
+
+ 
+
+
+
+
+
+
+
+
         <div class="col-md-2" id="rating_con">
 
             <div id="save_con">
