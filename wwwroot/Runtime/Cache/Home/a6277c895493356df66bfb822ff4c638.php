@@ -233,12 +233,107 @@ $("#Mall_nav").mouseleave(function(){
 </nav>
     </div>
     
+    
+
         <div class="col-md-5" id="video_con">
 video
         </div>
-        <div class="col-md-5" id="describe_con">
-          describe
+        <div class="col-md-5" id="describe_con";>
+           <p>Bodyweight Squat </p>
+           <p>Also Known As: prisoner squat, air squat </p>
+
+           <p>Exercise Data</p>
+           <p>Type: Strength</p>
+           <p>Main Muscle Worked: Quadriceps </p>
+           <p>Other Muscles: Glutes, Hamstrings </p>
+           <p>Equipment:Body Only</p>
+           <p>Mechanics Type: Compound</p>
+           <p>Level: Beginner</p>
+           <p>Sport: No</p>
+           <p>Force: Push</p>
+           <p>Your Rating: </p> 
+
+           <p> Login to rate</p>
+
+  
+            <p>Excellent</p>
+            <p>Exercise Rating Read Bodyweight Squat Reviews SHARE </p> 
+
+            <p>Print Exercise Widget SHARE  </p>
+            <p>Print Exercise Widget </p>
+        
+          </div>
+   
+    <div style="text-align:center";>
+        <div class="nav_s">
+            <div style="margin-top:5px;">
+                <h4 style="float:left;margin-left:230px;">Bodyweight Squat Images</h4>
+            </div>
+                  <div class="col-md-12">
+                        <div class="col-md-6"><img src="" alt="tu1" /></div>
+                        <div class="col-md-6"><img src="" alt="tu2" /></div>
+                  </div>
+         </div>
+    </div>
+
+
+  <div >
+        <div class="nav_s" >
+            <div >
+                <h4 style="float:left;margin-left:230px;">Bodyweight Squat Guide</h4>
+            </div>
+                  <div class="col-md-12">
+                        <div class="col-md-3" style="float:left;margin-left:230px;"><img src="" alt="tu1" /></div>
+                        <div class="col-md-7" style="float:left;margin-left:230px;">
+                            <p>1.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                             </p>
+                            <p>2.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                             </p>
+                            <p>3.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                            </p>
+                        </div>
+                  </div>
+         </div>
+    </div>  
+
+
+   <div ;>
+        <div class="nav_s">
+            <div style="margin-top:5px;">
+                <h4 style="float:left;margin-left:230px;">Alternative Exercises For Bodyweight Squat</h4>
+            </div>
+                  <div class="col-md-12">
+                        <div class="col-md-7"style="float:left;margin-left:230px;">No alternative exercises found. Know of one? Tell us in the tips section below.</div>
+                        <div class="col-md-5"style="float:left;margin-left:230px;">
+                             <p>1.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                             </p>
+                            <p>2.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                             </p>
+                            <p>3.Stand with your feet shoulder width apart. You can place your hands behind your head. This will be your starting position.
+                            </p>
+
+                        </div>
+                  </div>
+         </div>
+    </div>
+
+
+
+    <div style="border:1px soild #ccc;">
+        <div >
+             <div></div>
+             <div></div>
+
         </div>
+       
+      
+     </div>
+
+
+
+ </div>
+
+          
         <div class="col-md-2" id="rating_con">
 
             <div id="save_con">

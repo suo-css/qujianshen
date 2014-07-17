@@ -311,9 +311,9 @@ $("#Mall_nav").mouseleave(function(){
 
      </div>
      
-      
+      <div style="float:right;margin-top:10px;"><a href="<?php echo U('Exercise/exc_mte');?>" class="btn btn-primary btn-lg active" role="button" ;>下一步</a></div>
 </div>
-<a href="<?php echo U('Exercise/exc_mte');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
+
 
          
              <div class="col-md-2" >

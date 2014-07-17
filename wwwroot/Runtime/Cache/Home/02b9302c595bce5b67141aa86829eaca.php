@@ -300,17 +300,18 @@ $("#Mall_nav").mouseleave(function(){
      <img src="" alt="tu1" style="padding-left:10px";>
     </div>
   
-   
-   </div> 
-       <hr color="#ccc" width:100%; size:1px; noshade />
+         <div style="float:right;margin-top:10px;margin-left:20px;"><a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a></div>
+   </div>  
+
+
+      
    </div>
-
-</div>
-
-
-<a href="<?php echo U('Exercise/exc_name');?>" class="btn btn-primary btn-lg active" role="button">下一步</a>
+   
 
           
+        
+</div>
+   
 
          
 
