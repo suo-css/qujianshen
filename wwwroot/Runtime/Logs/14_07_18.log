@@ -1,0 +1,31 @@
+[ 2014-07-18T09:00:31+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/Exercise/exc_mte.html
+SQL: SHOW COLUMNS FROM `onethink_likeaction` [ RunTime:0.011720s ]
+SQL: SELECT * FROM `onethink_likeaction` WHERE ( `uid` = 2 ) LIMIT 1   [ RunTime:0.001046s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\qujianshen\wwwroot\Application\Home\Controller\ExerciseController.class.php 第 236 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000881s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001436s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003466s ]
+
+[ 2014-07-18T09:00:34+08:00 ] 127.0.0.1 /qujianshen/wwwroot/index.php?s=/Home/BodySpace/Index.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000928s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001614s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.086419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005152s ]
+
